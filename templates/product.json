@@ -1,0 +1,110 @@
+{
+  "sections": {
+    "main-product": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {}
+        },
+        "popup": {
+          "type": "popup",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {}
+        },
+        "inventory": {
+          "type": "inventory",
+          "settings": {}
+        },
+        "pickup_availability": {
+          "type": "pickup_availability",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "dropdown_information_1": {
+          "type": "dropdown_information",
+          "settings": {}
+        },
+        "dropdown_information_2": {
+          "type": "dropdown_information",
+          "settings": {}
+        },
+        "dropdown_information_3": {
+          "type": "dropdown_information",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "variant_picker",
+        "popup",
+        "buy_buttons",
+        "inventory",
+        "pickup_availability",
+        "description",
+        "dropdown_information_1",
+        "dropdown_information_2",
+        "dropdown_information_3"
+      ],
+      "settings": {
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "show_border_bottom": true,
+        "padding_bottom": "m"
+      }
+    },
+    "product-complementary": {
+      "type": "product-complementary",
+      "disabled": true,
+      "settings": {
+        "section_heading": "Complementary Products",
+        "section_button_label": "Shop All",
+        "margin_top": "m",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "section_heading": "You May Also Like",
+        "section_button_label": "Shop All",
+        "margin_top": "m",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "settings": {
+        "color_scheme": "background-1",
+        "margin_top": "m",
+        "margin_bottom": "no-indent"
+      }
+    }
+  },
+  "order": [
+    "main-product",
+    "product-complementary",
+    "product-recommendations",
+    "newsletter"
+  ]
+}

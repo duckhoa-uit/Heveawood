@@ -1,0 +1,70 @@
+{
+	"type": "footer",
+	"name": "t:sections.footer.settings.footer-group.label",
+	"sections": {
+		"footer": {
+			"type": "footer",
+			"blocks": {
+				"footer-0": {
+					"type": "logo_info",
+					"settings": {
+						"logo_width": 110,
+						"enable_border_left": false,
+						"enable_border_right": true
+					}
+				},
+				"footer-1": {
+					"type": "link_list",
+					"settings": {
+						"heading": "Quick links",
+						"menu": "footer",
+						"default_open": false
+					}
+				},
+				"footer-2": {
+					"type": "link_list",
+					"settings": {
+						"heading": "Quick links",
+						"menu": "footer",
+						"default_open": false
+					}
+				},
+				"footer-3": {
+					"type": "link_list",
+					"settings": {
+						"heading": "Quick links",
+						"menu": "footer",
+						"default_open": false
+					}
+				},
+				"footer-4": {
+					"type": "contacts",
+					"settings": {
+						"show_social": true,
+						"enable_border_left": true,
+						"enable_border_right": false
+					}
+				}
+			},
+			"block_order": [
+				"footer-0",
+				"footer-1",
+				"footer-2",
+				"footer-3",
+				"footer-4"
+			],
+			"settings": {
+				"color_scheme": "",
+				"show_border": true,
+				"enable_country_selector": true,
+				"enable_language_selector": true,
+				"payment_enable": true,
+				"show_policy": true,
+				"enable_copyright_date": true,
+				"enable_copyright_shopname": true,
+				"enable_follow_on_shop": false
+			}
+		}
+	},
+	"order": ["footer"]
+}
