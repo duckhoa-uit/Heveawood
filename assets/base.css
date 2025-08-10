@@ -1538,6 +1538,14 @@ deferred-media {
   .customer .button--tertiary {
     padding: 0 2.5rem;
   }
+  .button--primary-size,
+  .customer .button--primary-size {
+    padding: 1.55rem 4.1rem 1.45rem 4.1rem;
+  }
+  .button--small,
+  .customer .button--small {
+    padding: 1.5rem 5.9rem;
+  }
 }
 .button--primary,
 .customer .button--primary {
@@ -1590,12 +1598,12 @@ deferred-media {
   .button--primary[data-button-text].button--primary-size::after, .button--secondary[data-button-text].button--primary-size::after,
   .customer .button--primary[data-button-text].button--primary-size::after,
   .customer .button--secondary[data-button-text].button--primary-size::after {
-    padding: 1.4rem 2.5rem;
+    padding: 1.55rem 3.75rem 1.45rem 3.75rem;
   }
   .button--primary[data-button-text].button--small::after, .button--secondary[data-button-text].button--small::after,
   .customer .button--primary[data-button-text].button--small::after,
   .customer .button--secondary[data-button-text].button--small::after {
-    padding: 1.1rem 2rem;
+    padding: 1.5rem 5.5rem;
   }
   .button--primary[data-button-text] > span, .button--secondary[data-button-text] > span,
   .customer .button--primary[data-button-text] > span,
@@ -1614,6 +1622,18 @@ deferred-media {
     opacity: 1;
     top: 50%;
     transform: translate(-50%, -50%);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button--primary[data-button-text].button--primary-size::after, .button--secondary[data-button-text].button--primary-size::after,
+  .customer .button--primary[data-button-text].button--primary-size::after,
+  .customer .button--secondary[data-button-text].button--primary-size::after {
+    padding: 1.55rem 4.1rem 1.45rem 4.1rem;
+  }
+  .button--primary[data-button-text].button--small::after, .button--secondary[data-button-text].button--small::after,
+  .customer .button--primary[data-button-text].button--small::after,
+  .customer .button--secondary[data-button-text].button--small::after {
+    padding: 1.5rem 5.9rem;
   }
 }
 .button--tertiary,
@@ -1656,14 +1676,19 @@ deferred-media {
 }
 .button--tertiary.button--primary-size,
 .customer .button--tertiary.button--primary-size {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: var(--font-weight-medium);
+  line-height: 1.5em;
   padding: 0 !important;
   min-width: auto !important;
   min-height: auto !important;
 }
 .button--tertiary.button--small,
 .customer .button--tertiary.button--small {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-bold);
+  line-height: 1.2em;
+  letter-spacing: -0.01em;
   padding: 0 !important;
   min-width: auto !important;
   min-height: auto !important;
@@ -1770,31 +1795,41 @@ deferred-media {
 }
 .button--simple.button--primary-size,
 .customer .button--simple.button--primary-size {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: var(--font-weight-medium);
+  line-height: 1.5em;
   padding: 0 !important;
   min-width: auto !important;
   min-height: auto !important;
 }
 .button--simple.button--small,
 .customer .button--simple.button--small {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-bold);
+  line-height: 1.2em;
+  letter-spacing: -0.01em;
   padding: 0 !important;
   min-width: auto !important;
   min-height: auto !important;
 }
 .button--primary-size,
 .customer .button--primary-size {
-  font-size: 1.5rem;
-  min-height: 5rem;
-  min-width: 14.8rem;
-  padding: 1.4rem 2.5rem;
+  font-size: 1.6rem;
+  font-weight: var(--font-weight-medium);
+  line-height: 1.5em;
+  min-height: 5.6rem;
+  min-width: 15.2rem;
+  padding: 1.55rem 3.75rem 1.45rem 3.75rem;
 }
 .button--small,
 .customer .button--small {
-  font-size: 1.2rem;
-  padding: 1.1rem 2rem;
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-bold);
+  line-height: 1.2em;
+  letter-spacing: -0.01em;
+  padding: 1.5rem 5.5rem;
   min-height: 4rem;
-  min-width: 5rem;
+  min-width: auto;
 }
 .button--full-width,
 .customer .button--full-width {
