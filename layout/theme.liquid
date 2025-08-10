@@ -233,9 +233,15 @@
         --font-heading-line-height: {{ settings.type_header_line_height }};
         --font-heading-text-transform: {{ settings.type_header_text_transform }};
 
-        --font-section-heading-family: {{ settings.type_section_header_font.family }}, {{ settings.type_section_header_font.fallback_families }};
-        --font-section-heading-style: {{ settings.type_section_header_font.style }};
-        --font-section-heading-weight: {{ settings.type_section_header_font.weight }};
+        {%- if settings.header_font_custom -%}
+          --font-section-heading-family: "mundial", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, Helvetica, sans-serif;
+          --font-section-heading-style: normal;
+          --font-section-heading-weight: 400;
+        {%- else -%}
+          --font-section-heading-family: {{ settings.type_section_header_font.family }}, {{ settings.type_section_header_font.fallback_families }};
+          --font-section-heading-style: {{ settings.type_section_header_font.style }};
+          --font-section-heading-weight: {{ settings.type_section_header_font.weight }};
+        {%- endif -%}
 
         --font-subtitle-family: {{ settings.type_subtitle_font.family }}, {{ settings.type_subtitle_font.fallback_families }};
         --font-subtitle-style: {{ settings.type_subtitle_font.style }};

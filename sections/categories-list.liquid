@@ -25,7 +25,7 @@
       section_heading: section.settings.section_heading,
       button_label: section.settings.section_button_label,
       button_link: section.settings.section_button_link,
-      button_style: section.settings.section_button_style 
+      button_style: section.settings.section_button_style
     %}
 
     <div
@@ -106,7 +106,7 @@
                       style: style
                   }}
                 {% else %}
-                  {% assign collection_index = forloop.index | modulo: 4 | plus: 1 %} 
+                  {% assign collection_index = forloop.index | modulo: 4 | plus: 1 %}
                   {{ 'collection-apparel-' | append: collection_index | placeholder_svg_tag: 'placeholder-svg' }}
                 {% endif %}
                 {% if layout == 'overlay' and block.settings.overlay_enable %}
@@ -114,7 +114,7 @@
                 {% endif %}
               </div>
               {% if layout == 'overlay' %}
-                <h4 class="categories-list__item-title--inner h4">
+                <h4 class="categories-list__item-title--inner display-xs display-lg--medium">
                   {% if block.settings.collection != blank %}
                     <a
                       href="{{ block.settings.collection.url }}"
@@ -242,12 +242,16 @@
           "label": "t:sections.all.indents.options__2.label"
         },
         {
-          "value": "1.6rem",
+          "value": "0.9rem",
           "label": "t:sections.all.indents.options__3.label"
         },
         {
-          "value": "2.4rem",
+          "value": "1.6rem",
           "label": "t:sections.all.indents.options__4.label"
+        },
+        {
+          "value": "2.4rem",
+          "label": "t:sections.all.indents.options__5.label"
         }
       ]
     },
@@ -348,23 +352,23 @@
       "id": "section_heading_size",
       "options": [
         {
-          "value": "h4",
+          "value": "display-xs--medium",
           "label": "t:sections.all.heading_size.options__4.label"
         },
         {
-          "value": "h3",
+          "value": "display-sm--medium",
           "label": "t:sections.all.heading_size.options__1.label"
         },
         {
-          "value": "h2",
+          "value": "display-md--medium",
           "label": "t:sections.all.heading_size.options__2.label"
         },
         {
-          "value": "h1",
+          "value": "display-lg--medium",
           "label": "t:sections.all.heading_size.options__3.label"
         }
       ],
-      "default": "h3",
+      "default": "display-sm--medium",
       "label": "t:sections.all.heading_size.label"
     },
     {

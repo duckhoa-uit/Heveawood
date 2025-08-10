@@ -1159,6 +1159,9 @@
 				},
 				"options__4": {
 					"label": "Large"
+				},
+				"options__5": {
+					"label": "XLarge"
 				}
 			},
 			"content_options": {

@@ -128,19 +128,19 @@
             "overlay_opacity": 0.2
           }
         },
-        "collection_5": {
+        "collection_6": {
           "type": "collection_item",
           "settings": {
-            "collection": "naslapy",
+            "collection": "doplnky-ostatni",
             "color_scheme": "",
             "overlay_enable": true,
             "overlay_opacity": 0.2
           }
         },
-        "collection_6": {
+        "collection_item_K3D4HP": {
           "type": "collection_item",
           "settings": {
-            "collection": "doplnky-ostatni",
+            "collection": "naslapy-1",
             "color_scheme": "",
             "overlay_enable": true,
             "overlay_opacity": 0.2
@@ -152,19 +152,19 @@
         "collection_2",
         "collection_3",
         "collection_4",
-        "collection_5",
-        "collection_6"
+        "collection_6",
+        "collection_item_K3D4HP"
       ],
       "settings": {
-        "layout": "standard",
+        "layout": "overlay",
         "columns_per_row": 6,
-        "indent_value": "1.6rem",
+        "indent_value": "0.9rem",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "image_ratio": "3/2",
+        "image_ratio": "3/4",
         "object_fit": "cover",
-        "section_heading": "Kategorie",
-        "section_heading_size": "h3",
+        "section_heading": "Naše nabídka",
+        "section_heading_size": "display-sm--medium",
         "section_button_label": "",
         "section_button_link": "",
         "section_button_style": "primary",
