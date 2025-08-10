@@ -84,7 +84,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 2.4rem;
+  gap: 1.6rem;
   box-sizing: border-box;
   text-align: center;
   padding: 3rem 2rem 7.2rem;
@@ -92,7 +92,7 @@
 @media screen and (min-width: 990px) {
   .slideshow-slide__content {
     /* padding: 6rem 8rem 13.2rem; */
-    max-width: 731px;
+    max-width: 89rem;
     margin: 0 auto;
   }
 }
@@ -204,6 +204,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 2.4rem;
+  margin-top: 0.8rem;
 }
 .content-left .slideshow-slide__buttons {
   justify-content: flex-start;

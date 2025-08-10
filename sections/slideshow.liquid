@@ -1,4 +1,3 @@
-
 {{ 'section-slideshow.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'section-slideshow.js' | asset_url }}" defer="defer"></script>
 
@@ -31,7 +30,7 @@
       assign aspect_ratio = image_size | split: '/'
       assign temp = aspect_ratio[0] | append: '.0'
       assign padding_bottom = aspect_ratio[1] | divided_by: temp | times: 100 | round: 2
-      assign slide_class = "custom-ratio"
+      assign slide_class = 'custom-ratio'
   endcase
 
   if section.settings.header_overlay == true and slideshow_type == 'overlay' and section_size == 'full'
@@ -66,10 +65,10 @@
     data-header-overlay="true"
   {% endif %}
 >
-  {% if section_size == "container" %}
-  <div class="container slideshow__container">
+  {% if section_size == 'container' %}
+    <div class="container slideshow__container">
   {% endif %}
-  {% if slideshow_type == "overlay" %}
+  {% if slideshow_type == 'overlay' %}
     <div class="slideshow__swiper swiper">
       <div class="slideshow__wrapper swiper-wrapper">
         {% for block in section.blocks %}
@@ -89,7 +88,7 @@
               {% endif %}
             }
           {% endstyle %}
-          <div 
+          <div
             class="slideshow-swiper__slide swiper-slide{% if has_overlay %} color-background-3{% else %} color-{{ block.settings.color_scheme }}{% endif %}"
             data-color-scheme="{% if has_overlay %}color-background-3{% else %}color-{{ block.settings.color_scheme }}{% endif %}"
             {{ block.shopify_attributes }}
@@ -104,14 +103,14 @@
                         assign width_adapt_ratio = 550 | times: block.settings.image.aspect_ratio | round: 2
                       endif
 
-                      if section_size == "full"
-                        assign desktop_width = "100vw"
+                      if section_size == 'full'
+                        assign desktop_width = '100vw'
                       else
-                        assign desktop_width = "calc(100vw - 64px * 2)"
+                        assign desktop_width = 'calc(100vw - 64px * 2)'
                       endif
                     %}
                     {% capture sizes %}
-                      (min-width: 1200px) {{desktop_width}}, 
+                      (min-width: 1200px) {{desktop_width}},
                       {% if width_adapt_ratio != 1 %}
                         {{ width_adapt_ratio }}px
                       {% else %}
@@ -155,25 +154,27 @@
                       {{ block.settings.text }}
                     </div>
                   {% endif %}
-                  {% if block.settings.primary_button_label != blank or block.settings.secondary_button_label != blank %}
+                  {% if block.settings.primary_button_label != blank
+                    or block.settings.secondary_button_label != blank
+                  %}
                     <div
                       class="slideshow-slide__buttons"
                       data-swiper-parallax="-1500"
                     >
                       {% if block.settings.primary_button_label != blank %}
-                        {% render 'button', 
-                            btn_label: block.settings.primary_button_label, 
-                            btn_link: block.settings.primary_button_link, 
-                            btn_size: 'primary',
-                            btn_style: 'primary',
+                        {% render 'button',
+                          btn_label: block.settings.primary_button_label,
+                          btn_link: block.settings.primary_button_link,
+                          btn_size: 'primary',
+                          btn_style: 'primary'
                         %}
                       {% endif %}
                       {% if block.settings.secondary_button_label != blank %}
-                        {% render 'button', 
-                          btn_label: block.settings.secondary_button_label, 
+                        {% render 'button',
+                          btn_label: block.settings.secondary_button_label,
                           btn_link: block.settings.secondary_button_link,
                           btn_size: 'primary',
-                          btn_style: 'tertiary' 
+                          btn_style: 'tertiary'
                         %}
                       {% endif %}
                     </div>
@@ -185,7 +186,7 @@
         {% endfor %}
       </div>
       {% if section.blocks.size > 1 %}
-        {% if content_alignment == "left" and section.blocks.size > 1 %}
+        {% if content_alignment == 'left' and section.blocks.size > 1 %}
           <div class="swiper-controls__wrapper no-js-hidden">
             <div class="{% if section_size != "container" %}container section-full-screen{% endif %}">
               <div class="swiper-controls__box">
@@ -195,33 +196,35 @@
         {% endif %}
         {% if section.settings.show_arrows %}
           <div class="swiper-buttons__wrapper">
-            {% if content_alignment == "center" %}
-              <div class="swiper-buttons__container container {% if section_size == "container" %}section-in-container{% endif %}">
+            {% if content_alignment == 'center' %}
+              <div
+                class="swiper-buttons__container container {% if section_size == "container" %}section-in-container{% endif %}"
+              >
             {% endif %}
-              <div class="swiper-buttons__box">
-                <div class="swiper-button swiper-button-prev {% if content_alignment == "center" %}swiper-button--large{% endif %}">
-                  {% if content_alignment == "center" %}
-                    <span>{% render 'icon-big-arrow' %}</span>
-                  {% else %}
-                    <span>{% render 'icon-arrow' %}</span>
-                  {% endif %}
-                </div>
-                <div class="swiper-button swiper-button-next {% if content_alignment == "center" %}swiper-button--large{% endif %}">
-                  {% if content_alignment == "center" %}
-                    <span>{% render 'icon-big-arrow' %}</span>
-                  {% else %}
-                    <span>{% render 'icon-arrow' %}</span>
-                  {% endif %}
-                </div>
+            <div class="swiper-buttons__box">
+              <div class="swiper-button swiper-button-prev {% if content_alignment == "center" %}swiper-button--large{% endif %}">
+                {% if content_alignment == 'center' %}
+                  <span>{% render 'icon-big-arrow' %}</span>
+                {% else %}
+                  <span>{% render 'icon-arrow' %}</span>
+                {% endif %}
               </div>
-            {% if content_alignment == "center" %}
+              <div class="swiper-button swiper-button-next {% if content_alignment == "center" %}swiper-button--large{% endif %}">
+                {% if content_alignment == 'center' %}
+                  <span>{% render 'icon-big-arrow' %}</span>
+                {% else %}
+                  <span>{% render 'icon-arrow' %}</span>
+                {% endif %}
+              </div>
+            </div>
+            {% if content_alignment == 'center' %}
               </div>
             {% endif %}
           </div>
         {% endif %}
-        {% if content_alignment == "left" %}
-              </div>
-            </div>
+        {% if content_alignment == 'left' %}
+          </div>
+          </div>
           </div>
         {% endif %}
       {% endif %}
@@ -232,57 +235,59 @@
         <div class="split-screen-slideshow__content-swiper swiper">
           <div class="swiper-wrapper">
             {% for block in section.blocks %}
-            <div
-              class="swiper-slide split-screen-slideshow-slide color-{{ block.settings.color_scheme }}"
-              {{ block.shopify_attributes }}
-              data-color-scheme="color-{{ block.settings.color_scheme }}"
-            >
-              <div class="split-screen-slideshow-slide__container{% if section_size != "container" %} container section-full-screen{% endif %}">
-                <div class="split-screen-slideshow-slide__content{% if content_alignment == "left" %} content-left{% endif %}{%if section.blocks.size > 1 and section.settings.show_bullets %} large-padding-bottom{% endif %}">
-                  {% if block.settings.subheading != blank %}
-                  <div
-                    class="subheading split-screen-slideshow-slide__subheading"
-                    data-swiper-parallax="-100"
-                  >
-                    {{ block.settings.subheading }}
-                  </div>
-                  {% endif %}
-                  {% if block.settings.heading != blank %}
-                  <h1 class="split-screen-slideshow-slide__title {{ block.settings.heading_size }}">
-                    {{ block.settings.heading }}
-                  </h1>
-                  {% endif %}
-                  {% if block.settings.text != blank %}
-                  <div class="split-screen-slideshow-slide__desc richtext__content">
-                    {{ block.settings.text }}
-                  </div>
-                  {% endif %}
-                  {% if block.settings.primary_button_label != blank or block.settings.secondary_button_label != blank %}
-                    <div
-                      class="slideshow-slide__buttons"
-                      data-swiper-parallax="-100"
-                    >
-                      {% if block.settings.primary_button_label != blank %}
-                        {% render 'button',
-                            btn_label: block.settings.primary_button_label, 
-                            btn_link: block.settings.primary_button_link, 
+              <div
+                class="swiper-slide split-screen-slideshow-slide color-{{ block.settings.color_scheme }}"
+                {{ block.shopify_attributes }}
+                data-color-scheme="color-{{ block.settings.color_scheme }}"
+              >
+                <div class="split-screen-slideshow-slide__container{% if section_size != "container" %} container section-full-screen{% endif %}">
+                  <div class="split-screen-slideshow-slide__content{% if content_alignment == "left" %} content-left{% endif %}{%if section.blocks.size > 1 and section.settings.show_bullets %} large-padding-bottom{% endif %}">
+                    {% if block.settings.subheading != blank %}
+                      <div
+                        class="subheading split-screen-slideshow-slide__subheading"
+                        data-swiper-parallax="-100"
+                      >
+                        {{ block.settings.subheading }}
+                      </div>
+                    {% endif %}
+                    {% if block.settings.heading != blank %}
+                      <h1 class="split-screen-slideshow-slide__title {{ block.settings.heading_size }}">
+                        {{ block.settings.heading }}
+                      </h1>
+                    {% endif %}
+                    {% if block.settings.text != blank %}
+                      <div class="split-screen-slideshow-slide__desc richtext__content">
+                        {{ block.settings.text }}
+                      </div>
+                    {% endif %}
+                    {% if block.settings.primary_button_label != blank
+                      or block.settings.secondary_button_label != blank
+                    %}
+                      <div
+                        class="slideshow-slide__buttons"
+                        data-swiper-parallax="-100"
+                      >
+                        {% if block.settings.primary_button_label != blank %}
+                          {% render 'button',
+                            btn_label: block.settings.primary_button_label,
+                            btn_link: block.settings.primary_button_link,
                             btn_size: 'primary',
-                            btn_style: 'primary',
-                        %}
-                      {% endif %}
-                      {% if block.settings.secondary_button_label != blank %}
-                        {% render 'button',
-                          btn_label: block.settings.secondary_button_label, 
-                          btn_link: block.settings.secondary_button_link,
-                          btn_size: 'primary',
-                          btn_style: 'tertiary'
-                        %}
-                      {% endif %}
-                    </div>
-                  {% endif %}
+                            btn_style: 'primary'
+                          %}
+                        {% endif %}
+                        {% if block.settings.secondary_button_label != blank %}
+                          {% render 'button',
+                            btn_label: block.settings.secondary_button_label,
+                            btn_link: block.settings.secondary_button_link,
+                            btn_size: 'primary',
+                            btn_style: 'tertiary'
+                          %}
+                        {% endif %}
+                      </div>
+                    {% endif %}
+                  </div>
                 </div>
               </div>
-            </div>
             {% endfor %}
           </div>
           {%- if section.blocks.size > 1 -%}
@@ -318,23 +323,23 @@
                   {% endif %}
                 }
               {% endstyle %}
-              <div 
-                class="swiper-slide {% if block.settings.image == blank %}split-screen-slideshow__image-slider__slide{% endif %} color-background-3" 
+              <div
+                class="swiper-slide {% if block.settings.image == blank %}split-screen-slideshow__image-slider__slide{% endif %} color-background-3"
                 id="{{ block.id }}"
                 {{ block.shopify_attributes }}
               >
                 <div class="split-screen-slideshow__image-slider__box {% if block.settings.overlay_enable %}have-overlay{% endif %}">
                   {% if block.settings.image != blank %}
                     {% liquid
-                      if section_size == "full"
-                        assign desktop_width = "60vw"
+                      if section_size == 'full'
+                        assign desktop_width = '60vw'
                       else
-                        assign desktop_width = "calc(60vw - 64px)"
+                        assign desktop_width = 'calc(60vw - 64px)'
                       endif
                     %}
                     {% capture sizes %}
-                      (min-width: 1200px) {{desktop_width}}, 
-                      (min-width: 990px) 60vw, 
+                      (min-width: 1200px) {{desktop_width}},
+                      (min-width: 990px) 60vw,
                       100vw
                     {% endcapture %}
                     {{
@@ -383,8 +388,8 @@
       </div>
     </div>
   {% endif %}
-  {% if section_size == "container" %}
-  </div>
+  {% if section_size == 'container' %}
+    </div>
   {% endif %}
 </div>
 
@@ -718,23 +723,23 @@
           "id": "heading_size",
           "options": [
             {
-              "value": "h4",
+              "value": "display-md display-md--bold",
               "label": "t:sections.all.heading_size.options__4.label"
             },
             {
-              "value": "h3",
+              "value": "display-lg display-lg--bold",
               "label": "t:sections.all.heading_size.options__1.label"
             },
             {
-              "value": "h2",
+              "value": "display-xl display-xl--bold",
               "label": "t:sections.all.heading_size.options__2.label"
             },
             {
-              "value": "h1",
+              "value": "display-2xl display-2xl--bold",
               "label": "t:sections.all.heading_size.options__3.label"
             }
           ],
-          "default": "h1",
+          "default": "display-2xl display-2xl--bold",
           "label": "t:sections.all.heading_size.label"
         },
         {

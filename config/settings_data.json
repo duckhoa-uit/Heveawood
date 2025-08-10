@@ -144,7 +144,7 @@
           "colors_input_hover_border": "#ffffff",
           "card_new_price_color": "#ffffff",
           "card_old_price_color": "#8a8a8a",
-          "colors_background_overlay": "#131313",
+          "colors_background_overlay": "#000",
           "color_border": "#3e3e3e",
           "colors_background_3": "#333333"
         }

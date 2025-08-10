@@ -18,46 +18,46 @@
             "color_scheme": "background-1",
             "image": "shopify://shop_images/1d4a015390c15fe95e79dc6efa53bbd4169b11b4.jpg",
             "subheading": "ODOLNÁ. UDRŽITELNÁ. CENOVĚ VÝHODNÁ.",
-            "heading": "Tvrdý jako dub, ale levnější",
-            "heading_size": "h1",
+            "heading": "Tvrdý jako dub,<br>ale levnější",
+            "heading_size": "display-2xl display-2xl--bold",
             "text": "Již přes <strong>20 let</strong> dovážíme a prodáváme kvalitní HEVEA spárovky pro výrobu Vašeho nábytku.",
             "primary_button_label": "Nabídka",
             "primary_button_link": "shopify://collections/all",
-            "secondary_button_label": "Zjistit více",
+            "secondary_button_label": "Více o hevee",
             "secondary_button_link": "",
             "overlay_enable": true,
             "overlay_opacity": 0.7
           }
         },
-        "slideshow_item_zHLct4": {
+        "slideshow_item_gzCqDY": {
           "type": "slideshow_item",
           "settings": {
-            "color_scheme": "background-3",
-            "image": "shopify://shop_images/IMG_9971.jpg",
-            "subheading": "Short Context",
-            "heading": "Write headline describing slideshow content",
-            "heading_size": "h1",
-            "text": "This section allows you to showcase slides featuring different promotions, collections, or brand messages",
-            "primary_button_label": "Shop now",
-            "primary_button_link": "",
-            "secondary_button_label": "Learn more",
+            "color_scheme": "background-1",
+            "image": "shopify://shop_images/1d4a015390c15fe95e79dc6efa53bbd4169b11b4.jpg",
+            "subheading": "ODOLNÁ. UDRŽITELNÁ. CENOVĚ VÝHODNÁ.",
+            "heading": "Tvrdý jako dub,ale levnější",
+            "heading_size": "display-2xl display-2xl--bold",
+            "text": "Již přes <strong>20 let</strong> dovážíme a prodáváme kvalitní HEVEA spárovky pro výrobu Vašeho nábytku.",
+            "primary_button_label": "Nabídka",
+            "primary_button_link": "shopify://collections/all",
+            "secondary_button_label": "Více o hevee",
             "secondary_button_link": "",
             "overlay_enable": true,
             "overlay_opacity": 0.7
           }
         },
-        "slideshow_item_rJwrAp": {
+        "slideshow_item_XQ7ADn": {
           "type": "slideshow_item",
           "settings": {
-            "color_scheme": "background-3",
-            "image": "shopify://shop_images/IMG_9992-scaled-e1738607740624-2048x1363.jpg",
-            "subheading": "Short Context",
-            "heading": "Write headline describing slideshow content",
-            "heading_size": "h1",
-            "text": "This section allows you to showcase slides featuring different promotions, collections, or brand messages",
-            "primary_button_label": "Shop now",
-            "primary_button_link": "",
-            "secondary_button_label": "Learn more",
+            "color_scheme": "background-1",
+            "image": "shopify://shop_images/1d4a015390c15fe95e79dc6efa53bbd4169b11b4.jpg",
+            "subheading": "ODOLNÁ. UDRŽITELNÁ. CENOVĚ VÝHODNÁ.",
+            "heading": "Tvrdý jako dub,ale levnější",
+            "heading_size": "display-2xl display-2xl--bold",
+            "text": "Již přes <strong>20 let</strong> dovážíme a prodáváme kvalitní HEVEA spárovky pro výrobu Vašeho nábytku.",
+            "primary_button_label": "Nabídka",
+            "primary_button_link": "shopify://collections/all",
+            "secondary_button_label": "Více o hevee",
             "secondary_button_link": "",
             "overlay_enable": true,
             "overlay_opacity": 0.7
@@ -66,8 +66,8 @@
       },
       "block_order": [
         "block_1",
-        "slideshow_item_zHLct4",
-        "slideshow_item_rJwrAp"
+        "slideshow_item_gzCqDY",
+        "slideshow_item_XQ7ADn"
       ],
       "settings": {
         "header_overlay": true,
