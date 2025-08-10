@@ -3,7 +3,7 @@
 }
 .popular-products__wrapper {
   display: grid;
-  gap: 4rem 1.6rem;
+  gap: 4rem 1.1rem;
 }
 .popular-products__wrapper--1 {
   grid-template-columns: 1fr;

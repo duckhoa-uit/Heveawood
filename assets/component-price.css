@@ -2,17 +2,18 @@
   margin-top: 1.6rem;
 }
 
-/* Updated price to use new typography system */
+/* Updated price to match .text-md typography utility */
 .price {
   align-items: center;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  /* Use Text md for card prices with medium weight */
+  /* Typography matching .text-md */
+  font-family: var(--font-body-family);
   font-size: var(--font-text-md-size);
   line-height: var(--font-text-md-line-height);
+  font-weight: var(--font-weight-regular);
   color: rgb(var(--color-card-price-new));
-  font-weight: var(--font-weight-medium);
   width: 100%;
 }
 .price-item--regular {

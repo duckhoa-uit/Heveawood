@@ -1156,7 +1156,7 @@ details > * {
   font-weight: var(--font-subtitle-weight);
   font-style: var(--font-subtitle-style);
   text-transform: uppercase;
-  color: rgb(var(--color-foreground-tertiary));
+  color: rgb(var(--color-foreground-secondary));
   word-break: break-word;
 }
 .card__subtitle a {
