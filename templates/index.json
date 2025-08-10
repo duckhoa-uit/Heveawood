@@ -1,1 +1,549 @@
-{"sections":{"slideshow":{"type":"slideshow","blocks":{"block_1":{"type":"slideshow_item","settings":{"color_scheme":"background-1","subheading":"ODOLNÁ. UDRŽITELNÁ. CENOVĚ VÝHODNÁ.","heading":"Tvrdý jako dub, ale levnější","heading_size":"h1","text":"Již přes <strong>20 let<\/strong> dovážíme a prodáváme kvalitní HEVEA spárovky pro výrobu Vašeho nábytku.","primary_button_label":"Nabídka","primary_button_link":"shopify:\/\/collections\/all","secondary_button_label":"Zjistit více","secondary_button_link":"","overlay_enable":true,"overlay_opacity":0.2}}},"block_order":["block_1"],"settings":{"header_overlay":true,"section_layout":"overlay","section_size":"full","content_alignment":"center","image_size":"21\/9","is_loop":true,"is_autoplay":false,"is_hover_stop_autoplay":true,"show_arrows":true,"show_bullets":true,"parallax":true,"slideshow_speed":1.1,"slideshow_delay":3,"slide_effects":"slide","slide_effects_split_screen":"fade","margin_top":"no-indent","margin_bottom":"no-indent"}},"categories-list":{"type":"categories-list","blocks":{"collection_1":{"type":"collection_item","settings":{"collection":"sparovky","color_scheme":"","overlay_enable":true,"overlay_opacity":0.2}},"collection_2":{"type":"collection_item","settings":{"collection":"hranoly","color_scheme":"","overlay_enable":true,"overlay_opacity":0.2}},"collection_3":{"type":"collection_item","settings":{"collection":"naslapy-1","color_scheme":"","overlay_enable":true,"overlay_opacity":0.2}},"collection_4":{"type":"collection_item","settings":{"collection":"stolove-desky","color_scheme":"","overlay_enable":true,"overlay_opacity":0.2}},"collection_5":{"type":"collection_item","settings":{"collection":"naslapy","color_scheme":"","overlay_enable":true,"overlay_opacity":0.2}},"collection_6":{"type":"collection_item","settings":{"collection":"doplnky-ostatni","color_scheme":"","overlay_enable":true,"overlay_opacity":0.2}}},"block_order":["collection_1","collection_2","collection_3","collection_4","collection_5","collection_6"],"settings":{"layout":"standard","columns_per_row":6,"indent_value":"1.6rem","columns_mobile":"1","swipe_on_mobile":true,"image_ratio":"3\/2","object_fit":"cover","section_heading":"Kategorie","section_heading_size":"h3","section_button_label":"","section_button_link":"","section_button_style":"primary","margin_top":"m","margin_bottom":"m"}},"multicolumn":{"type":"multicolumn","blocks":{"column-1":{"type":"column","settings":{"icon":"globe","heading":"Tvrdost","text":"Hevea má Brinell 4,2 – o 15 % tvrdší než dub, přesto se lehce opracovává.","button_label":"","button_link":"","button_style":"secondary","full_link":true}},"column-2":{"type":"column","settings":{"icon":"return","heading":"Ekologický původ","text":"Dřevo pochází z recyklovaných kaučukových plantáží, které by jinak skončily na skládce.","button_label":"","button_link":"","button_style":"secondary","full_link":true}},"column-3":{"type":"column","settings":{"icon":"lock","heading":"Řežeme na míru","text":"Potřebujete atypický rozměr? Řezání CNC ±0,5 mm, hotovo do 24 h.","button_label":"","button_link":"","button_style":"secondary","full_link":true}},"column_7iqRm7":{"type":"column","settings":{"icon":"globe","heading":"Sklad v ČR","text":"6 000 m² materiálu v Pardubicích a Praze = bleskové dodání bez celních průtahů.","button_label":"","button_link":"","button_style":"secondary","full_link":false}}},"block_order":["column-1","column-2","column-3","column_7iqRm7"],"settings":{"columns_per_row":2,"content_alignment":"center","swipe_on_mobile":true,"card_heading_size":"h4","image_size":"medium","image_ratio":"1\/1","object_fit":"cover","show_border_top":true,"show_border_bottom":true,"margin_top":"xs","margin_bottom":"no-indent","padding_top":"xs","padding_bottom":"xs"}},"popular-products-1":{"type":"popular-products","settings":{"product_list":["hranol-hevea-cink-aa-70-90-mm","kuchynska-pracovni-deska-hevea-cink-ab-38-620-mm","podstupnice-hevea-cink-20-200-mm","sparovka-hevea-cink-kvalita-aa-20-40-mm"],"columns_per_row":4,"columns_mobile":"2","swipe_on_mobile":false,"section_heading":"Nejoblíbenější produkty","section_heading_size":"h3","section_button_label":"","section_button_link":"","section_button_style":"secondary","image_ratio":"3\/4","image_fit":"cover","show_secondary_image":true,"show_vendor":true,"show_collection":false,"show_desc":false,"content_alignment":"center","margin_top":"m","margin_bottom":"no-indent"}},"image-banner":{"type":"image-banner","settings":{"color_scheme":"background-1","section_layout":"standard","section_size":"container","image_ratio":"21\/9","overlay_enable":false,"overlay_opacity":0.4,"content_alignment":"left","content_position":"left","subheading":"Náš příbeh","heading":"Heveawood je rodinná firma, která od roku 2003 nabízí truhlářům na českém trhu kvalitní alternativu k dubu. ","heading_size":"h4","text":"Naším cílem bylo přinést něco jedinečného – dřevo Hevea, které dovážíme přímo z vietnamských plantáží. Chtěli jsme nabídnout materiál, který je nejen cenově dostupný a přírodě šetrný, ale také spolehlivý a vhodný pro různé řemeslné projekty. Pokračujeme tak v rodinné tradici a zaměřujeme se na to, co je pro nás důležité: kvalitu, dostupnost, ekologii a všestrannost.","enable_animation":true,"promo_alignment":"center","percent":"","promo_badge":"","button_label":"Více o nás","button_link":"","button_style":"primary","margin_top":"m","margin_bottom":"no-indent"}},"popular-products-2":{"type":"popular-products","settings":{"product_list":["kuchynska-pracovni-deska-hevea-cink-ab-38-620-mm","schodnice-naslap-hevea-cink-40-300-mm","sparovka-hevea-prubezna-ab-20-40-mm","sparovka-hevea-cink-kvalita-aa-20-40-mm"],"columns_per_row":4,"columns_mobile":"1","swipe_on_mobile":true,"section_heading":"Právě v akci","section_heading_size":"h3","section_button_label":"","section_button_link":"","section_button_style":"secondary","image_ratio":"3\/4","image_fit":"cover","show_secondary_image":true,"show_vendor":true,"show_collection":false,"show_desc":false,"content_alignment":"center","margin_top":"m","margin_bottom":"no-indent"}},"product-slider":{"type":"product-slider","blocks":{"block_1":{"type":"product-slider_item","settings":{"product":"","subheading":"Short Phrase","heading":"Add a Slide Title That Highlights the Focus of This Slide","heading_size":"h2","text":"","primary_button_label":"Explore more","primary_button_link":"","secondary_button_label":"","secondary_button_link":"","overlay_enable":true,"overlay_opacity":0.2}},"block_2":{"type":"product-slider_item","settings":{"product":"","subheading":"Short Phrase","heading":"Add a Slide Title That Highlights the Focus of This Slide","heading_size":"h2","text":"","primary_button_label":"Explore more","primary_button_link":"","secondary_button_label":"","secondary_button_link":"","overlay_enable":true,"overlay_opacity":0.2}},"block_3":{"type":"product-slider_item","settings":{"product":"","subheading":"Short Phrase","heading":"Add a Slide Title That Highlights the Focus of This Slide","heading_size":"h2","text":"","primary_button_label":"Explore more","primary_button_link":"","secondary_button_label":"","secondary_button_link":"","overlay_enable":true,"overlay_opacity":0.2}}},"block_order":["block_1","block_2","block_3"],"settings":{"color_scheme":"background-3","section_size":"container","aspect_ratio":"21\/9","show_vendor":true,"product_aspect_ratio":"3\/4","product_object_fit":"cover","is_autoplay":false,"is_hover_stop_autoplay":true,"show_arrows":true,"show_bullets":true,"slideshow_speed":1.1,"slideshow_delay":3,"slide_effects":"slide","margin_top":"m","margin_bottom":"s"}},"testimonials":{"type":"testimonials","blocks":{"testimonials_slide_1":{"type":"testimonials_slide","settings":{"text":"A satisfied customer’s words will be displayed here, sharing their thoughts on the product.","product_name":"Customer Name Here","author_name":"Author Name","enable_stars":true,"rating":5}},"testimonials_slide_2":{"type":"testimonials_slide","settings":{"text":"A satisfied customer’s words will be displayed here, sharing their thoughts on the product.","product_name":"Customer Name Here","author_name":"Author Name","enable_stars":true,"rating":5}},"testimonials_slide_3":{"type":"testimonials_slide","settings":{"text":"A satisfied customer’s words will be displayed here, sharing their thoughts on the product.","product_name":"Customer Name Here","author_name":"Author Name","enable_stars":true,"rating":5}}},"block_order":["testimonials_slide_1","testimonials_slide_2","testimonials_slide_3"],"settings":{"layout":"image_right","image_size":"16\/9","is_loop":true,"is_autoplay":true,"is_hover_stop_autoplay":true,"show_arrows":true,"slideshow_speed":0.8,"slideshow_delay":3,"subheading":"Testimonials","heading":"Here Can Be an Overview of the Number of Satisfied Customers","heading_size":"h2","text":"Show how many trust your brand and love products","margin_top":"m","margin_bottom":"no-indent"}},"collapsible-content":{"type":"collapsible-content","blocks":{"accordion-1":{"type":"accordion","settings":{"question":"Here can be a commonly asked question about your product or service.","answer":"Here can be a brief but clear response to the question, giving customers a quick answer without unnecessary details.","answer_richtext":"","default_open":true}},"accordion-2":{"type":"accordion","settings":{"question":"Here can be a commonly asked question about your product or service.","answer":"Here can be a brief but clear response to the question, giving customers a quick answer without unnecessary details.","answer_richtext":"","default_open":false}},"accordion-3":{"type":"accordion","settings":{"question":"Here can be a commonly asked question about your product or service.","answer":"Here can be a brief but clear response to the question, giving customers a quick answer without unnecessary details.","answer_richtext":"","default_open":false}}},"block_order":["accordion-1","accordion-2","accordion-3"],"settings":{"section_heading":"Frequently Asked Questions","section_heading_size":"h2","section_button_label":"See Details","section_button_link":"","section_button_style":"secondary","show_border_top":false,"show_border_bottom":false,"margin_top":"m","margin_bottom":"no-indent","padding_top":"s","padding_bottom":"m"}},"featured_blog":{"type":"featured-blog","settings":{"blog":"journal","post_limit":4,"columns_per_row":4,"show_image":true,"show_tags":true,"show_date":true,"show_author":false,"show_excerpt":true,"show_count_comments":false,"columns_mobile":"1","swipe_on_mobile":true,"image_ratio":"16\/9","section_heading":"Introduction to featured blog posts","section_heading_size":"h3","section_button_label":"View All","section_button_link":"","section_button_style":"secondary","margin_top":"m","margin_bottom":"m"}}},"order":["slideshow","categories-list","multicolumn","popular-products-1","image-banner","popular-products-2","product-slider","testimonials","collapsible-content","featured_blog"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "block_1": {
+          "type": "slideshow_item",
+          "settings": {
+            "color_scheme": "background-1",
+            "image": "shopify://shop_images/1d4a015390c15fe95e79dc6efa53bbd4169b11b4.jpg",
+            "subheading": "ODOLNÁ. UDRŽITELNÁ. CENOVĚ VÝHODNÁ.",
+            "heading": "Tvrdý jako dub, ale levnější",
+            "heading_size": "h1",
+            "text": "Již přes <strong>20 let</strong> dovážíme a prodáváme kvalitní HEVEA spárovky pro výrobu Vašeho nábytku.",
+            "primary_button_label": "Nabídka",
+            "primary_button_link": "shopify://collections/all",
+            "secondary_button_label": "Zjistit více",
+            "secondary_button_link": "",
+            "overlay_enable": true,
+            "overlay_opacity": 0.7
+          }
+        },
+        "slideshow_item_zHLct4": {
+          "type": "slideshow_item",
+          "settings": {
+            "color_scheme": "background-3",
+            "image": "shopify://shop_images/IMG_9971.jpg",
+            "subheading": "Short Context",
+            "heading": "Write headline describing slideshow content",
+            "heading_size": "h1",
+            "text": "This section allows you to showcase slides featuring different promotions, collections, or brand messages",
+            "primary_button_label": "Shop now",
+            "primary_button_link": "",
+            "secondary_button_label": "Learn more",
+            "secondary_button_link": "",
+            "overlay_enable": true,
+            "overlay_opacity": 0.7
+          }
+        },
+        "slideshow_item_rJwrAp": {
+          "type": "slideshow_item",
+          "settings": {
+            "color_scheme": "background-3",
+            "image": "shopify://shop_images/IMG_9992-scaled-e1738607740624-2048x1363.jpg",
+            "subheading": "Short Context",
+            "heading": "Write headline describing slideshow content",
+            "heading_size": "h1",
+            "text": "This section allows you to showcase slides featuring different promotions, collections, or brand messages",
+            "primary_button_label": "Shop now",
+            "primary_button_link": "",
+            "secondary_button_label": "Learn more",
+            "secondary_button_link": "",
+            "overlay_enable": true,
+            "overlay_opacity": 0.7
+          }
+        }
+      },
+      "block_order": [
+        "block_1",
+        "slideshow_item_zHLct4",
+        "slideshow_item_rJwrAp"
+      ],
+      "settings": {
+        "header_overlay": true,
+        "section_layout": "overlay",
+        "section_size": "full",
+        "content_alignment": "center",
+        "image_size": "21/9",
+        "is_loop": true,
+        "is_autoplay": false,
+        "is_hover_stop_autoplay": true,
+        "show_arrows": false,
+        "show_bullets": true,
+        "parallax": true,
+        "slideshow_speed": 1.1,
+        "slideshow_delay": 3,
+        "slide_effects": "slide",
+        "slide_effects_split_screen": "fade",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "categories-list": {
+      "type": "categories-list",
+      "blocks": {
+        "collection_1": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "sparovky",
+            "color_scheme": "",
+            "overlay_enable": true,
+            "overlay_opacity": 0.2
+          }
+        },
+        "collection_2": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "hranoly",
+            "color_scheme": "",
+            "overlay_enable": true,
+            "overlay_opacity": 0.2
+          }
+        },
+        "collection_3": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "naslapy-1",
+            "color_scheme": "",
+            "overlay_enable": true,
+            "overlay_opacity": 0.2
+          }
+        },
+        "collection_4": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "stolove-desky",
+            "color_scheme": "",
+            "overlay_enable": true,
+            "overlay_opacity": 0.2
+          }
+        },
+        "collection_5": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "naslapy",
+            "color_scheme": "",
+            "overlay_enable": true,
+            "overlay_opacity": 0.2
+          }
+        },
+        "collection_6": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "doplnky-ostatni",
+            "color_scheme": "",
+            "overlay_enable": true,
+            "overlay_opacity": 0.2
+          }
+        }
+      },
+      "block_order": [
+        "collection_1",
+        "collection_2",
+        "collection_3",
+        "collection_4",
+        "collection_5",
+        "collection_6"
+      ],
+      "settings": {
+        "layout": "standard",
+        "columns_per_row": 6,
+        "indent_value": "1.6rem",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "image_ratio": "3/2",
+        "object_fit": "cover",
+        "section_heading": "Kategorie",
+        "section_heading_size": "h3",
+        "section_button_label": "",
+        "section_button_link": "",
+        "section_button_style": "primary",
+        "margin_top": "m",
+        "margin_bottom": "m"
+      }
+    },
+    "multicolumn": {
+      "type": "multicolumn",
+      "blocks": {
+        "column-1": {
+          "type": "column",
+          "settings": {
+            "icon": "globe",
+            "heading": "Tvrdost",
+            "text": "Hevea má Brinell 4,2 – o 15 % tvrdší než dub, přesto se lehce opracovává.",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "secondary",
+            "full_link": true
+          }
+        },
+        "column-2": {
+          "type": "column",
+          "settings": {
+            "icon": "return",
+            "heading": "Ekologický původ",
+            "text": "Dřevo pochází z recyklovaných kaučukových plantáží, které by jinak skončily na skládce.",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "secondary",
+            "full_link": true
+          }
+        },
+        "column-3": {
+          "type": "column",
+          "settings": {
+            "icon": "lock",
+            "heading": "Řežeme na míru",
+            "text": "Potřebujete atypický rozměr? Řezání CNC ±0,5 mm, hotovo do 24 h.",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "secondary",
+            "full_link": true
+          }
+        },
+        "column_7iqRm7": {
+          "type": "column",
+          "settings": {
+            "icon": "globe",
+            "heading": "Sklad v ČR",
+            "text": "6 000 m² materiálu v Pardubicích a Praze = bleskové dodání bez celních průtahů.",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "secondary",
+            "full_link": false
+          }
+        }
+      },
+      "block_order": [
+        "column-1",
+        "column-2",
+        "column-3",
+        "column_7iqRm7"
+      ],
+      "settings": {
+        "columns_per_row": 2,
+        "content_alignment": "center",
+        "swipe_on_mobile": true,
+        "card_heading_size": "h4",
+        "image_size": "medium",
+        "image_ratio": "1/1",
+        "object_fit": "cover",
+        "show_border_top": true,
+        "show_border_bottom": true,
+        "margin_top": "xs",
+        "margin_bottom": "no-indent",
+        "padding_top": "xs",
+        "padding_bottom": "xs"
+      }
+    },
+    "popular-products-1": {
+      "type": "popular-products",
+      "settings": {
+        "product_list": [
+          "hranol-hevea-cink-aa-70-90-mm",
+          "kuchynska-pracovni-deska-hevea-cink-ab-38-620-mm",
+          "podstupnice-hevea-cink-20-200-mm",
+          "sparovka-hevea-cink-kvalita-aa-20-40-mm"
+        ],
+        "columns_per_row": 4,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "section_heading": "Nejoblíbenější produkty",
+        "section_heading_size": "h3",
+        "section_button_label": "",
+        "section_button_link": "",
+        "section_button_style": "secondary",
+        "image_ratio": "3/4",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_collection": false,
+        "show_desc": false,
+        "content_alignment": "center",
+        "margin_top": "m",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image-banner": {
+      "type": "image-banner",
+      "settings": {
+        "color_scheme": "background-1",
+        "section_layout": "standard",
+        "section_size": "container",
+        "image_ratio": "21/9",
+        "overlay_enable": false,
+        "overlay_opacity": 0.4,
+        "content_alignment": "left",
+        "content_position": "left",
+        "subheading": "Náš příbeh",
+        "heading": "Heveawood je rodinná firma, která od roku 2003 nabízí truhlářům na českém trhu kvalitní alternativu k dubu. ",
+        "heading_size": "h4",
+        "text": "Naším cílem bylo přinést něco jedinečného – dřevo Hevea, které dovážíme přímo z vietnamských plantáží. Chtěli jsme nabídnout materiál, který je nejen cenově dostupný a přírodě šetrný, ale také spolehlivý a vhodný pro různé řemeslné projekty. Pokračujeme tak v rodinné tradici a zaměřujeme se na to, co je pro nás důležité: kvalitu, dostupnost, ekologii a všestrannost.",
+        "enable_animation": true,
+        "promo_alignment": "center",
+        "percent": "",
+        "promo_badge": "",
+        "button_label": "Více o nás",
+        "button_link": "",
+        "button_style": "primary",
+        "margin_top": "m",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "popular-products-2": {
+      "type": "popular-products",
+      "settings": {
+        "product_list": [
+          "kuchynska-pracovni-deska-hevea-cink-ab-38-620-mm",
+          "schodnice-naslap-hevea-cink-40-300-mm",
+          "sparovka-hevea-prubezna-ab-20-40-mm",
+          "sparovka-hevea-cink-kvalita-aa-20-40-mm"
+        ],
+        "columns_per_row": 4,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "section_heading": "Právě v akci",
+        "section_heading_size": "h3",
+        "section_button_label": "",
+        "section_button_link": "",
+        "section_button_style": "secondary",
+        "image_ratio": "3/4",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_collection": false,
+        "show_desc": false,
+        "content_alignment": "center",
+        "margin_top": "m",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "product-slider": {
+      "type": "product-slider",
+      "blocks": {
+        "block_1": {
+          "type": "product-slider_item",
+          "settings": {
+            "product": "",
+            "subheading": "Short Phrase",
+            "heading": "Add a Slide Title That Highlights the Focus of This Slide",
+            "heading_size": "h2",
+            "text": "",
+            "primary_button_label": "Explore more",
+            "primary_button_link": "",
+            "secondary_button_label": "",
+            "secondary_button_link": "",
+            "overlay_enable": true,
+            "overlay_opacity": 0.2
+          }
+        },
+        "block_2": {
+          "type": "product-slider_item",
+          "settings": {
+            "product": "",
+            "subheading": "Short Phrase",
+            "heading": "Add a Slide Title That Highlights the Focus of This Slide",
+            "heading_size": "h2",
+            "text": "",
+            "primary_button_label": "Explore more",
+            "primary_button_link": "",
+            "secondary_button_label": "",
+            "secondary_button_link": "",
+            "overlay_enable": true,
+            "overlay_opacity": 0.2
+          }
+        },
+        "block_3": {
+          "type": "product-slider_item",
+          "settings": {
+            "product": "",
+            "subheading": "Short Phrase",
+            "heading": "Add a Slide Title That Highlights the Focus of This Slide",
+            "heading_size": "h2",
+            "text": "",
+            "primary_button_label": "Explore more",
+            "primary_button_link": "",
+            "secondary_button_label": "",
+            "secondary_button_link": "",
+            "overlay_enable": true,
+            "overlay_opacity": 0.2
+          }
+        }
+      },
+      "block_order": [
+        "block_1",
+        "block_2",
+        "block_3"
+      ],
+      "settings": {
+        "color_scheme": "background-3",
+        "section_size": "container",
+        "aspect_ratio": "21/9",
+        "show_vendor": true,
+        "product_aspect_ratio": "3/4",
+        "product_object_fit": "cover",
+        "is_autoplay": false,
+        "is_hover_stop_autoplay": true,
+        "show_arrows": true,
+        "show_bullets": true,
+        "slideshow_speed": 1.1,
+        "slideshow_delay": 3,
+        "slide_effects": "slide",
+        "margin_top": "m",
+        "margin_bottom": "s"
+      }
+    },
+    "testimonials": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonials_slide_1": {
+          "type": "testimonials_slide",
+          "settings": {
+            "text": "A satisfied customer’s words will be displayed here, sharing their thoughts on the product.",
+            "product_name": "Customer Name Here",
+            "author_name": "Author Name",
+            "enable_stars": true,
+            "rating": 5
+          }
+        },
+        "testimonials_slide_2": {
+          "type": "testimonials_slide",
+          "settings": {
+            "text": "A satisfied customer’s words will be displayed here, sharing their thoughts on the product.",
+            "product_name": "Customer Name Here",
+            "author_name": "Author Name",
+            "enable_stars": true,
+            "rating": 5
+          }
+        },
+        "testimonials_slide_3": {
+          "type": "testimonials_slide",
+          "settings": {
+            "text": "A satisfied customer’s words will be displayed here, sharing their thoughts on the product.",
+            "product_name": "Customer Name Here",
+            "author_name": "Author Name",
+            "enable_stars": true,
+            "rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "testimonials_slide_1",
+        "testimonials_slide_2",
+        "testimonials_slide_3"
+      ],
+      "settings": {
+        "layout": "image_right",
+        "image_size": "16/9",
+        "is_loop": true,
+        "is_autoplay": true,
+        "is_hover_stop_autoplay": true,
+        "show_arrows": true,
+        "slideshow_speed": 0.8,
+        "slideshow_delay": 3,
+        "subheading": "Testimonials",
+        "heading": "Here Can Be an Overview of the Number of Satisfied Customers",
+        "heading_size": "h2",
+        "text": "Show how many trust your brand and love products",
+        "margin_top": "m",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "collapsible-content": {
+      "type": "collapsible-content",
+      "blocks": {
+        "accordion-1": {
+          "type": "accordion",
+          "settings": {
+            "question": "Here can be a commonly asked question about your product or service.",
+            "answer": "Here can be a brief but clear response to the question, giving customers a quick answer without unnecessary details.",
+            "answer_richtext": "",
+            "default_open": true
+          }
+        },
+        "accordion-2": {
+          "type": "accordion",
+          "settings": {
+            "question": "Here can be a commonly asked question about your product or service.",
+            "answer": "Here can be a brief but clear response to the question, giving customers a quick answer without unnecessary details.",
+            "answer_richtext": "",
+            "default_open": false
+          }
+        },
+        "accordion-3": {
+          "type": "accordion",
+          "settings": {
+            "question": "Here can be a commonly asked question about your product or service.",
+            "answer": "Here can be a brief but clear response to the question, giving customers a quick answer without unnecessary details.",
+            "answer_richtext": "",
+            "default_open": false
+          }
+        }
+      },
+      "block_order": [
+        "accordion-1",
+        "accordion-2",
+        "accordion-3"
+      ],
+      "settings": {
+        "section_heading": "Frequently Asked Questions",
+        "section_heading_size": "h2",
+        "section_button_label": "See Details",
+        "section_button_link": "",
+        "section_button_style": "secondary",
+        "show_border_top": false,
+        "show_border_bottom": false,
+        "margin_top": "m",
+        "margin_bottom": "no-indent",
+        "padding_top": "s",
+        "padding_bottom": "m"
+      }
+    },
+    "featured_blog": {
+      "type": "featured-blog",
+      "settings": {
+        "blog": "journal",
+        "post_limit": 4,
+        "columns_per_row": 4,
+        "show_image": true,
+        "show_tags": true,
+        "show_date": true,
+        "show_author": false,
+        "show_excerpt": true,
+        "show_count_comments": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "image_ratio": "16/9",
+        "section_heading": "Introduction to featured blog posts",
+        "section_heading_size": "h3",
+        "section_button_label": "View All",
+        "section_button_link": "",
+        "section_button_style": "secondary",
+        "margin_top": "m",
+        "margin_bottom": "m"
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "categories-list",
+    "multicolumn",
+    "popular-products-1",
+    "image-banner",
+    "popular-products-2",
+    "product-slider",
+    "testimonials",
+    "collapsible-content",
+    "featured_blog"
+  ]
+}
