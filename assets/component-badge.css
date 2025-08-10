@@ -1,3 +1,4 @@
+/* Updated badge to use new typography system */
 .badge {
   padding: 0.2rem 0.6rem;
   display: inline-block;
@@ -5,11 +6,12 @@
   background: rgb(var(--color-badge-background));
   color: rgb(var(--color-badge-text));
   font-family: var(--font-button-family);
-  font-weight: 500;
+  /* Use Text sm for badges with medium weight */
+  font-size: var(--font-text-sm-size);
+  line-height: var(--font-text-sm-line-height);
+  font-weight: var(--font-weight-medium);
   font-style: var(--font-button-style);
-  letter-spacing: var(--font-badge-letter-spacing);
-  font-size: 1.2rem;
-  line-height: 120%;
+  letter-spacing: normal; /* No letter spacing for text sizes */
   text-transform: capitalize;
 }
 .badge--sale {

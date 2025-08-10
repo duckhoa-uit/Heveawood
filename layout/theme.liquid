@@ -292,15 +292,77 @@
         --font-notification-heading-scale: {{ settings.notification_heading_scale | divided_by: 100.0 }};
         --font-notification-text-scale: {{ settings.notification_text_scale | divided_by: 100.0 }};
 
+        /* New Typography System - Display Sizes */
+        --font-display-2xl-size: 4.5rem;
+        --font-display-2xl-line-height: 1.25em;
+        --font-display-2xl-letter-spacing: -0.02em;
+
+        --font-display-xl-size: 3.75rem;
+        --font-display-xl-line-height: 1.2em;
+        --font-display-xl-letter-spacing: -0.02em;
+
+        --font-display-lg-size: 3rem;
+        --font-display-lg-line-height: 1.25em;
+        --font-display-lg-letter-spacing: -0.02em;
+
+        --font-display-md-size: 2.25rem;
+        --font-display-md-line-height: 1.222em;
+        --font-display-md-letter-spacing: -0.02em;
+
+        --font-display-sm-size: 1.875rem;
+        --font-display-sm-line-height: 1.267em;
+
+        --font-display-xs-size: 1.5rem;
+        --font-display-xs-line-height: 1.333em;
+
+        /* New Typography System - Text Sizes */
+        --font-text-lg-size: 1.25rem;
+        --font-text-lg-line-height: 1.5em;
+
+        --font-text-md-size: 1rem;
+        --font-text-md-line-height: 1.5em;
+
+        --font-text-sm-size: 0.75rem;
+        --font-text-sm-line-height: 1.5em;
+
+        /* New Typography System - Font Weights */
+        --font-weight-regular: 400;
+        --font-weight-medium: 600; /* Updated to use Demibold (600) instead of Medium (500) */
+        --font-weight-bold: 700;
+
         --border-radius-main: {{ settings.main_border_radius }}px;
         --border-radius-button: {{ settings.button_border_radius }}px;
         --border-radius-badge: {{ settings.badge_border_radius }}px;
         --payment-terms-background-color: {{ settings.colors_background_1 }};
       }
 
+      /* Mobile typography adjustments */
+      @media screen and (max-width: 749px) {
+        :root {
+          /* Slightly smaller text sizes for mobile */
+          --font-text-lg-size: 1.125rem; /* 18px instead of 20px */
+          --font-text-md-size: 0.9rem;   /* 14.4px instead of 16px */
+          --font-text-sm-size: 0.7rem;   /* 11.2px instead of 12px */
+
+          /* Tighter line heights for mobile */
+          --font-display-2xl-line-height: 1.1em;
+          --font-display-xl-line-height: 1.15em;
+          --font-display-lg-line-height: 1.2em;
+        }
+      }
+
       @media screen and (min-width: 990px) {
         :root {
          --spaced-section: 16rem;
+        }
+      }
+
+      /* Large desktop enhancements */
+      @media screen and (min-width: 1200px) {
+        :root {
+          /* Slightly larger text for better readability on large screens */
+          --font-text-lg-size: 1.375rem; /* 22px instead of 20px */
+          --font-text-md-size: 1.125rem; /* 18px instead of 16px */
         }
       }
 
@@ -323,18 +385,20 @@
         flex-direction: column;
         min-height: 100%;
         margin: 0;
-        font-size: calc(var(--font-body-scale) * 1rem - 0.1rem);
-        line-height: var(--font-body-line-height);
+        /* Updated to use new typography system - Text md (16px / 1rem) */
+        font-size: var(--font-text-md-size);
+        line-height: var(--font-text-md-line-height);
         font-family: var(--font-body-family);
         font-style: var(--font-body-style);
-        font-weight: var(--font-body-weight);
-        letter-spacing: calc(var(--font-body-letter-spacing) * 0.1);
+        font-weight: var(--font-weight-regular); /* Updated to use new weight system */
+        letter-spacing: normal; /* New typography system: no letter spacing for body text */
         overflow-x: hidden;
       }
 
-      @media screen and (min-width: 750px) {
+      /* Responsive body text - slightly smaller on mobile */
+      @media screen and (max-width: 749px) {
         body {
-          font-size: calc(var(--font-body-scale) * 1rem);
+          font-size: calc(var(--font-text-md-size) * 0.9); /* Slightly smaller on mobile */
         }
       }
 
@@ -346,6 +410,7 @@
     {% render 'color-scheme-vars' %}
     {{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
     {{ 'base.css' | asset_url | stylesheet_tag }}
+    {{ 'typography-utilities.css' | asset_url | stylesheet_tag }}
     {% assign is_main_product_preload = false %}
     {%- if request.page_type == 'product' -%}
       {%- assign is_main_product_preload = true -%}

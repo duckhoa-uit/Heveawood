@@ -2,15 +2,17 @@
   margin-top: 1.6rem;
 }
 
+/* Updated price to use new typography system */
 .price {
   align-items: center;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  font-size: 1.5rem;
-  line-height: 1.2;
+  /* Use Text md for card prices with medium weight */
+  font-size: var(--font-text-md-size);
+  line-height: var(--font-text-md-line-height);
   color: rgb(var(--color-card-price-new));
-  font-weight: var(--font-heading-card-weight);
+  font-weight: var(--font-weight-medium);
   width: 100%;
 }
 .price-item--regular {
@@ -71,13 +73,18 @@
     margin-bottom: 0;
   }
 }
+/* Product page price - larger and more prominent */
 .price--product {
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: var(--font-text-lg-size); /* Text lg for product prices */
+  line-height: var(--font-text-lg-line-height);
+  font-weight: var(--font-weight-medium);
 }
+
+/* Larger product price on desktop */
 @media screen and (min-width: 750px) {
   .price--product {
-    font-size: 2rem;
+    font-size: var(--font-display-xs-size); /* Display xs for desktop product prices */
+    line-height: var(--font-display-xs-line-height);
   }
 }
 

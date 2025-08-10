@@ -602,7 +602,7 @@ p {
   }
 }
 
-/* Typography */
+/* Typography - Updated for New Typography System */
 h1,
 h2,
 h3,
@@ -617,25 +617,29 @@ h6,
 .h5 {
   font-family: var(--font-heading-family);
   font-style: var(--font-heading-style);
-  font-weight: var(--font-heading-weight);
+  font-weight: var(--font-weight-regular); /* Updated to use new weight system */
   color: rgb(var(--color-foreground-title));
-  line-height: var(--font-heading-line-height);
   word-wrap: break-word;
   max-width: 100%;
 }
 
+/* Letter spacing for Display sizes (h1-h4 use -2%, h5-h6 no letter spacing) */
 h1,
 h2,
 h3,
 h4,
-h5,
 .h0,
 .h1,
 .h2,
 .h3,
-.h4,
+.h4 {
+  letter-spacing: -0.02em; /* New typography system: -2% for Display sizes */
+}
+
+h5,
+h6,
 .h5 {
-  letter-spacing: calc(var(--font-heading-letter-spacing) * 0.1);
+  letter-spacing: normal; /* No letter spacing for smaller headings */
 }
 
 .h1,
@@ -643,126 +647,112 @@ h5,
   text-transform: var(--font-heading-text-transform);
 }
 
+/* .h0 maps to Display 2xl (72px / 4.5rem) - Largest heading */
 .h0 {
-  font-size: 50px;
+  font-size: var(--font-display-2xl-size);
+  line-height: var(--font-display-2xl-line-height);
 }
 
-@media only screen and (min-width: 750px) {
+/* Responsive scaling for .h0 */
+@media screen and (max-width: 749px) {
   .h0 {
-    font-size: 100px;
+    font-size: var(--font-display-xl-size); /* Scale down to Display xl on mobile */
+    line-height: var(--font-display-xl-line-height);
   }
 }
+/* h1 maps to Display xl (60px / 3.75rem) */
 h1,
 .h1 {
-  font-size: calc(var(--font-heading-h1-scale) * 4rem);
+  font-size: var(--font-display-xl-size);
+  line-height: var(--font-display-xl-line-height);
 }
-@media only screen and (min-width: 750px) {
+
+/* Responsive scaling for h1 */
+@media screen and (max-width: 749px) {
   h1,
   .h1 {
-    font-size: calc(var(--font-heading-h1-scale) * 4.4rem);
-  }
-}
-@media only screen and (min-width: 1360px) {
-  h1,
-  .h1 {
-    font-size: calc(var(--font-heading-h1-scale) * 4.8rem);
-  }
-}
-@media only screen and (min-width: 1600px) {
-  h1,
-  .h1 {
-    font-size: calc(var(--font-heading-h1-scale) * 4.8rem);
+    font-size: var(--font-display-lg-size); /* Scale down to Display lg on mobile */
+    line-height: var(--font-display-lg-line-height);
   }
 }
 
+/* h2 maps to Display lg (48px / 3rem) */
 h2,
 .h2 {
-  font-size: calc(var(--font-heading-h2-scale) * 3rem);
+  font-size: var(--font-display-lg-size);
+  line-height: var(--font-display-lg-line-height);
 }
-@media only screen and (min-width: 750px) {
+
+/* Responsive scaling for h2 */
+@media screen and (max-width: 749px) {
   h2,
   .h2 {
-    font-size: calc(var(--font-heading-h2-scale) * 3.2rem);
-  }
-}
-@media only screen and (min-width: 1360px) {
-  h2,
-  .h2 {
-    font-size: calc(var(--font-heading-h2-scale) * 3.6rem);
-  }
-}
-@media only screen and (min-width: 1600px) {
-  h2,
-  .h2 {
-    font-size: calc(var(--font-heading-h2-scale) * 3.6rem);
+    font-size: var(--font-display-md-size); /* Scale down to Display md on mobile */
+    line-height: var(--font-display-md-line-height);
   }
 }
 
+/* h3 maps to Display md (36px / 2.25rem) */
 h3,
 .h3 {
-  font-size: calc(var(--font-heading-h3-scale) * 2.2rem);
+  font-size: var(--font-display-md-size);
+  line-height: var(--font-display-md-line-height);
 }
-@media only screen and (min-width: 750px) {
+
+/* Responsive scaling for h3 */
+@media screen and (max-width: 749px) {
   h3,
   .h3 {
-    font-size: calc(var(--font-heading-h3-scale) * 2.2rem);
-  }
-}
-@media only screen and (min-width: 1360px) {
-  h3,
-  .h3 {
-    font-size: calc(var(--font-heading-h3-scale) * 2.4rem);
-  }
-}
-@media only screen and (min-width: 1600px) {
-  h3,
-  .h3 {
-    font-size: calc(var(--font-heading-h3-scale) * 2.4rem);
+    font-size: var(--font-display-sm-size); /* Scale down to Display sm on mobile */
+    line-height: var(--font-display-sm-line-height);
   }
 }
 
+/* h4 maps to Display sm (30px / 1.875rem) */
 h4,
 .h4 {
-  font-size: calc(var(--font-heading-h4-scale) * 2rem);
+  font-size: var(--font-display-sm-size);
+  line-height: var(--font-display-sm-line-height);
 }
-@media only screen and (min-width: 1360px) {
+
+/* Responsive scaling for h4 */
+@media screen and (max-width: 749px) {
   h4,
   .h4 {
-    font-size: calc(var(--font-heading-h4-scale) * 2rem);
-  }
-}
-@media only screen and (min-width: 1600px) {
-  h4,
-  .h4 {
-    font-size: calc(var(--font-heading-h4-scale) * 2rem);
+    font-size: var(--font-display-xs-size); /* Scale down to Display xs on mobile */
+    line-height: var(--font-display-xs-line-height);
   }
 }
 
+/* h5 maps to Display xs (24px / 1.5rem) */
 h5,
 .h5 {
-  font-size: calc(var(--font-heading-h5-scale) * 1.8rem);
+  font-size: var(--font-display-xs-size);
+  line-height: var(--font-display-xs-line-height);
 }
-@media only screen and (min-width: 1360px) {
+
+/* Responsive scaling for h5 */
+@media screen and (max-width: 749px) {
   h5,
   .h5 {
-    font-size: calc(var(--font-heading-h5-scale) * 1.8rem);
-  }
-}
-@media only screen and (min-width: 1600px) {
-  h5,
-  .h5 {
-    font-size: calc(var(--font-heading-h5-scale) * 1.8rem);
+    font-size: var(--font-text-lg-size); /* Scale down to Text lg on mobile */
+    line-height: var(--font-text-lg-line-height);
   }
 }
 
+/* h6 maps to Text lg (20px / 1.25rem) */
 h6,
 .h6 {
-  font-size: 1.6rem;
+  font-size: var(--font-text-lg-size);
+  line-height: var(--font-text-lg-line-height);
 }
-@media only screen and (min-width: 1360px) {
+
+/* Responsive scaling for h6 */
+@media screen and (max-width: 749px) {
   h6,
   .h6 {
-    font-size: 1.8rem;
+    font-size: var(--font-text-md-size); /* Scale down to Text md on mobile */
+    line-height: var(--font-text-md-line-height);
   }
 }
 

@@ -2,45 +2,41 @@
   {%- comment -%}
     Preload the primary font weights for better performance
     Using mundial font from Adobe Typekit
-    NOTE: Add the following font files to the assets folder:
-    - mundial-light.woff2
+    New typography system weights: 400, 600, 700
+    Font files in assets folder:
     - mundial-regular.woff2
-    - mundial-semibold.woff2
+    - MundialDemibold.otf
+    - MundialBold.otf
   {%- endcomment -%}
-  {{ 'mundial-light.woff2' | asset_url | preload_tag: as: 'font', type: 'font/woff2', crossorigin: true }}
   {{ 'mundial-regular.woff2' | asset_url | preload_tag: as: 'font', type: 'font/woff2', crossorigin: true }}
-  {{ 'mundial-semibold.woff2' | asset_url | preload_tag: as: 'font', type: 'font/woff2', crossorigin: true }}
+  {{ 'MundialDemibold.otf' | asset_url | preload_tag: as: 'font', type: 'font/otf', crossorigin: true }}
+  {{ 'MundialBold.otf' | asset_url | preload_tag: as: 'font', type: 'font/otf', crossorigin: true }}
 {% else %}
   {%- comment -%}
     Adobe Typekit "mundial" font family implementation
-    Available weights: 300 (light), 400 (normal), 600 (semi-bold)
-    Using woff2 format for optimal performance and compatibility
+    New typography system weights: 400 (regular), 600 (demibold), 700 (bold)
+    Using mixed formats: woff2 for regular, otf for bold variants
 
-    Font files needed in assets folder:
-    - mundial-light.woff2 (weight: 300)
+    Font files in assets folder:
     - mundial-regular.woff2 (weight: 400)
-    - mundial-semibold.woff2 (weight: 600)
+    - MundialDemibold.otf (weight: 600) - Available
+    - MundialBold.otf (weight: 700) - Available
   {%- endcomment -%}
-
-  {%- comment -%} Mundial Light (300) {%- endcomment -%}
-  @font-face { font-display: block; font-family: "mundial"; src: url("{{ 'mundial-light.woff2' | asset_url }}")
-  format("woff2"); font-style: normal; font-weight: 300; }
 
   {%- comment -%} Mundial Regular (400) {%- endcomment -%}
   @font-face { font-display: block; font-family: "mundial"; src: url("{{ 'mundial-regular.woff2' | asset_url }}")
   format("woff2"); font-style: normal; font-weight: 400; }
 
-  {%- comment -%} Mundial Semi-Bold (600) {%- endcomment -%}
-  @font-face { font-display: block; font-family: "mundial"; src: url("{{ 'mundial-semibold.woff2' | asset_url }}")
-  format("woff2"); font-style: normal; font-weight: 600; }
+  {%- comment -%} Mundial Demibold (600) - OTF format {%- endcomment -%}
+  @font-face { font-display: block; font-family: "mundial"; src: url("{{ 'MundialDemibold.otf' | asset_url }}")
+  format("opentype"); font-style: normal; font-weight: 600; }
+
+  {%- comment -%} Mundial Bold (700) - OTF format {%- endcomment -%}
+  @font-face { font-display: block; font-family: "mundial"; src: url("{{ 'MundialBold.otf' | asset_url }}")
+  format("opentype"); font-style: normal; font-weight: 700; }
 
   {%- comment -%}
-    Map font-weight 500 (medium) to 600 (semi-bold) for compatibility
-    Map font-weight 700 (bold) to 600 (semi-bold) for compatibility
+    New typography system uses actual font weights instead of mapping
+    Old weight mappings removed - weights 500 and 700 now use proper font files
   {%- endcomment -%}
-  @font-face { font-display: block; font-family: "mundial"; src: url("{{ 'mundial-semibold.woff2' | asset_url }}")
-  format("woff2"); font-style: normal; font-weight: 500; }
-
-  @font-face { font-display: block; font-family: "mundial"; src: url("{{ 'mundial-semibold.woff2' | asset_url }}")
-  format("woff2"); font-style: normal; font-weight: 700; }
 {% endif %}

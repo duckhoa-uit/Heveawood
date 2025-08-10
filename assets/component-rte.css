@@ -1,11 +1,22 @@
+/* Updated RTE to use new typography system with enhanced responsive behavior */
 .rte {
-  line-height: 160%;
-  letter-spacing: -0.03em;
-  font-size: calc(var(--font-body-scale) * 1rem);
+  font-size: var(--font-text-md-size); /* Base: Text md (responsive) */
+  line-height: var(--font-text-md-line-height);
+  letter-spacing: normal; /* New typography system: no letter spacing for body text */
 }
+
+/* Tablet: Intermediate size */
+@media screen and (min-width: 750px) and (max-width: 1199px) {
+  .rte {
+    font-size: calc(var(--font-text-md-size) * 1.1); /* Slightly larger on tablet */
+  }
+}
+
+/* Desktop: Larger text for better readability */
 @media screen and (min-width: 1200px) {
   .rte {
-    font-size: calc(var(--font-body-scale) * 1.3333333333rem);
+    font-size: var(--font-text-lg-size); /* Desktop: Text lg (responsive) */
+    line-height: var(--font-text-lg-line-height);
   }
 }
 .rte:after {
@@ -13,13 +24,15 @@
   content: "";
   display: block;
 }
+/* RTE headings inherit from base heading styles but ensure proper line heights */
 .rte h1,
 .rte h2,
 .rte h3,
 .rte h4,
 .rte h5,
 .rte h6 {
-  line-height: var(--font-heading-line-height);
+  /* Line heights are now handled by base heading styles in base.css */
+  /* h1 uses Display xl line-height, h2 uses Display lg, etc. */
 }
 .rte h1 + p, .rte h1 + div, .rte h1 + span,
 .rte h2 + p,
@@ -184,6 +197,7 @@
   margin-right: auto;
   max-width: 100%;
 }
+/* Updated blockquote to use new typography system */
 .rte blockquote {
   position: relative;
   display: flex;
@@ -199,16 +213,36 @@
   border-radius: var(--border-radius-main);
   overflow: hidden;
   background-color: rgb(var(--color-background-secondary));
-  line-height: 130%;
-  letter-spacing: -0.03em;
-  font-weight: 400;
-  font-size: calc(var(--font-body-scale) * 1.2rem);
+  /* Use Text lg for blockquotes */
+  font-size: var(--font-text-lg-size);
+  line-height: var(--font-text-lg-line-height);
+  letter-spacing: normal; /* No letter spacing for text content */
+  font-weight: var(--font-weight-regular);
 }
+
+/* Tablet: Intermediate blockquote size */
+@media screen and (min-width: 750px) and (max-width: 1199px) {
+  .rte blockquote {
+    padding: 3.5rem;
+    font-size: calc(var(--font-text-lg-size) * 1.2); /* Slightly larger than Text lg */
+  }
+}
+
+/* Desktop: Larger blockquotes for emphasis */
 @media screen and (min-width: 1200px) {
   .rte blockquote {
     margin: 4.8rem 0;
     padding: 4rem;
-    font-size: 2.6rem;
+    font-size: var(--font-display-sm-size); /* Display sm (30px) for emphasis */
+    line-height: var(--font-display-sm-line-height);
+  }
+}
+
+/* Mobile: Smaller padding and margins */
+@media screen and (max-width: 749px) {
+  .rte blockquote {
+    margin: 1.6rem 0;
+    padding: 2rem;
   }
 }
 .rte blockquote + * {
@@ -233,6 +267,7 @@
     bottom: 4rem;
   }
 }
+/* Blockquote attribution/source - smaller text */
 .rte blockquote > p:last-child,
 .rte blockquote > h1:last-child,
 .rte blockquote > h2:last-child,
@@ -242,11 +277,13 @@
 .rte blockquote > h6:last-child,
 .rte blockquote > span:last-child,
 .rte blockquote > div:last-child {
-  font-size: 1.5rem;
+  font-size: var(--font-text-md-size); /* Text md for attribution */
+  line-height: var(--font-text-md-line-height);
   color: rgb(var(--color-foreground-secondary));
   font-family: var(--font-body-family);
-  font-weight: 500;
+  font-weight: var(--font-weight-medium); /* Medium weight for attribution */
 }
+/* Blockquote main content - inherits from parent blockquote styles */
 .rte blockquote > p:first-child,
 .rte blockquote > h1:first-child,
 .rte blockquote > h2:first-child,
@@ -256,11 +293,14 @@
 .rte blockquote > h6:first-child,
 .rte blockquote > span:first-child,
 .rte blockquote > div:first-child {
-  font-size: calc(var(--font-body-scale) * 1.2rem);
+  font-size: inherit; /* Inherit from parent blockquote */
+  line-height: inherit;
   color: rgb(var(--color-foreground));
   font-family: var(--font-heading-family);
-  font-weight: 400;
+  font-weight: var(--font-weight-regular);
 }
+
+/* Desktop blockquote content inherits larger size */
 @media screen and (min-width: 1200px) {
   .rte blockquote > p:first-child,
   .rte blockquote > h1:first-child,
@@ -271,7 +311,8 @@
   .rte blockquote > h6:first-child,
   .rte blockquote > span:first-child,
   .rte blockquote > div:first-child {
-    font-size: 2.6rem;
+    font-size: inherit; /* Inherit Display sm size from parent */
+    line-height: inherit;
   }
 }
 .rte blockquote > * {

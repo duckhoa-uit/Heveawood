@@ -10,12 +10,13 @@
     flex-grow: 1;
   }
 }
+/* Updated promo menu heading to use new typography system */
 .promo-menu__heading {
   text-transform: uppercase;
-  font-size: 1.2rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  line-height: 120%;
+  font-size: var(--font-text-sm-size); /* Text sm for menu headings */
+  line-height: var(--font-text-sm-line-height);
+  font-weight: var(--font-weight-bold); /* Bold weight for headings */
+  letter-spacing: 0.04em; /* Keep existing letter spacing for uppercase text */
   color: rgb(var(--color-foreground-secondary));
 }
 .promo-menu__list {
@@ -26,15 +27,19 @@
   padding: 0;
   list-style: none;
 }
+/* Updated promo menu link to use new typography system */
 .promo-menu__link {
   position: relative;
   display: flex;
   align-items: center;
   font-family: var(--font-header-menu-family);
   font-style: var(--font-header-menu-style);
-  font-weight: var(--font-header-menu-weight);
+  /* Use Text md for menu links with medium weight */
+  font-size: var(--font-text-md-size);
+  line-height: var(--font-text-md-line-height);
+  font-weight: var(--font-weight-medium);
   text-transform: var(--font-header-menu-text-transform);
-  letter-spacing: var(--font-big-menu-letter-spacing);
+  letter-spacing: normal; /* No letter spacing for text sizes */
   text-decoration: none;
   color: rgb(var(--color-foreground));
   transition: opacity var(--duration-default);

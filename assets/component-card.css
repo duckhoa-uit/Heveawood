@@ -153,18 +153,36 @@
 .card-information__group--left .card__middle {
   justify-content: flex-start;
 }
+/* Updated card title to use new typography system with responsive behavior */
 .card__title {
   position: relative;
   display: block;
   margin: 0;
   font-family: var(--font-heading-card-family);
   font-style: var(--font-heading-card-style);
-  font-weight: var(--font-heading-card-weight);
-  font-size: calc(var(--font-heading-card-scale) * 1.2rem);
-  letter-spacing: calc(var(--font-heading-letter-spacing) * 0.1);
+  /* Use Text lg for card titles with medium weight */
+  font-size: var(--font-text-lg-size);
+  line-height: var(--font-text-lg-line-height);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: normal; /* No letter spacing for text sizes */
   color: rgb(var(--color-foreground));
   z-index: 2;
   pointer-events: all;
+}
+
+/* Mobile: Slightly smaller card titles */
+@media screen and (max-width: 749px) {
+  .card__title {
+    font-size: var(--font-text-md-size); /* Text md on mobile */
+    line-height: var(--font-text-md-line-height);
+  }
+}
+
+/* Large desktop: Slightly larger for better hierarchy */
+@media screen and (min-width: 1200px) {
+  .card__title {
+    font-size: calc(var(--font-text-lg-size) * 1.1); /* 10% larger on large screens */
+  }
 }
 .card__title a {
   line-height: 1.2;
@@ -180,19 +198,24 @@
 .card__title a:hover {
   opacity: 0.7;
 }
+/* Updated card description to use new typography system */
 .card__description {
   margin-top: 0.6rem;
   font-family: var(--font-text-card-family);
   font-style: var(--font-text-card-style);
-  font-weight: var(--font-text-card-weight);
-  font-size: calc(var(--font-text-card-scale) * 1rem - 0.1rem);
+  /* Use Text md for card descriptions */
+  font-size: var(--font-text-md-size);
+  line-height: var(--font-text-md-line-height);
+  font-weight: var(--font-weight-regular);
   color: rgb(var(--color-foreground-secondary));
-  line-height: 1.2;
   width: 100%;
 }
-@media screen and (min-width: 576px) {
+
+/* Slightly smaller on mobile for better fit */
+@media screen and (max-width: 575px) {
   .card__description {
-    font-size: calc(var(--font-text-card-scale) * 1rem);
+    font-size: var(--font-text-sm-size);
+    line-height: var(--font-text-sm-line-height);
   }
 }
 .card__description--center {
