@@ -281,6 +281,20 @@
 				"type": "header",
 				"content": "t:settings_schema.typography.settings.header__1.content"
 			},
+      {
+        "type": "checkbox",
+        "id": "header_font_custom",
+        "label": "t:settings_schema.typography.settings.header_font_custom.label",
+        "info": "t:settings_schema.typography.settings.header_font_custom.info",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "body_font_custom",
+        "label": "t:settings_schema.typography.settings.body_font_custom.label",
+        "info": "t:settings_schema.typography.settings.body_font_custom.info",
+        "default": false
+      },
 			{
 				"type": "font_picker",
 				"id": "type_header_font",
@@ -1087,13 +1101,13 @@
         "id": "predictive_search_show_date",
         "default": true,
         "label": "t:sections.main-blog.settings.show_date.label"
-      }, 
+      },
 			{
         "type": "checkbox",
         "id": "predictive_search_show_author",
         "default": false,
         "label": "t:sections.main-blog.settings.show_author.label"
-      }, 
+      },
 			{
         "type": "checkbox",
         "id": "predictive_search_show_excerpt",

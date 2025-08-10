@@ -1,0 +1,15 @@
+{% style %}
+  {% if settings.body_font_custom %}
+    {% render 'brand-font-body', preload: false %}
+  {% else %}
+    {{ settings.type_body_font | font_face: font_display: 'swap' }}
+    {{ body_font_bold | font_face: font_display: 'swap' }}
+    {{ body_font_italic | font_face: font_display: 'swap' }}
+    {{ body_font_bold_italic | font_face: font_display: 'swap' }}
+  {% endif %}
+  {% if settings.header_font_custom %}
+    {% render 'brand-font-header', preload: false %}
+  {% else %}
+    {{ settings.type_header_font | font_face: font_display: 'swap' }}
+  {% endif %}
+{% endstyle %}

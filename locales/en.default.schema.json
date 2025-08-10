@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
 	"settings_schema": {
 		"dark_mode": {
@@ -161,6 +170,14 @@
 				"header__1": {
 					"content": "Headings"
 				},
+        "body_font_custom": {
+          "label": "Custom body font",
+          "info": "This will be checked if we have developed a custom theme that requires body fonts not found in Shopify. If check, all body-related font settings will be disabled, including font scale."
+        },
+        "header_font_custom": {
+          "label": "Custom header font",
+          "info": "This will be checked if we have developed a custom theme that requires header fonts not found in Shopify. If check, all header-related font settings will be disabled, including font scale."
+        },
 				"type_header_font": {
 					"label": "Main heading font",
 					"info": "Selecting a different font can affect the speed of your store. [Learn more about system fonts.](https://help.shopify.com/en/manual/online-store/os/store-speed/improving-speed#fonts)"
@@ -1916,7 +1933,7 @@
 							"label": "Heading"
 						},
 						"show_promo_block": {
-							"label": "Enable"	
+							"label": "Enable"
 						},
 						"menu_1_heading": {
 							"default": "Categories"
