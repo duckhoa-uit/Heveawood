@@ -292,37 +292,37 @@
         --font-notification-heading-scale: {{ settings.notification_heading_scale | divided_by: 100.0 }};
         --font-notification-text-scale: {{ settings.notification_text_scale | divided_by: 100.0 }};
 
-        /* New Typography System - Display Sizes */
-        --font-display-2xl-size: 4.5rem;
+        /* New Typography System - Display Sizes (Adjusted for 10px rem base) */
+        --font-display-2xl-size: 7.2rem; /* 72px: 4.5rem * 1.6 */
         --font-display-2xl-line-height: 1.25em;
         --font-display-2xl-letter-spacing: -0.02em;
 
-        --font-display-xl-size: 3.75rem;
+        --font-display-xl-size: 6rem; /* 60px: 3.75rem * 1.6 */
         --font-display-xl-line-height: 1.2em;
         --font-display-xl-letter-spacing: -0.02em;
 
-        --font-display-lg-size: 3rem;
+        --font-display-lg-size: 4.8rem; /* 48px: 3rem * 1.6 */
         --font-display-lg-line-height: 1.25em;
         --font-display-lg-letter-spacing: -0.02em;
 
-        --font-display-md-size: 2.25rem;
+        --font-display-md-size: 3.6rem; /* 36px: 2.25rem * 1.6 */
         --font-display-md-line-height: 1.222em;
         --font-display-md-letter-spacing: -0.02em;
 
-        --font-display-sm-size: 1.875rem;
+        --font-display-sm-size: 3rem; /* 30px: 1.875rem * 1.6 */
         --font-display-sm-line-height: 1.267em;
 
-        --font-display-xs-size: 1.5rem;
+        --font-display-xs-size: 2.4rem; /* 24px: 1.5rem * 1.6 */
         --font-display-xs-line-height: 1.333em;
 
-        /* New Typography System - Text Sizes */
-        --font-text-lg-size: 1.25rem;
+        /* New Typography System - Text Sizes (Adjusted for 10px rem base) */
+        --font-text-lg-size: 2rem; /* 20px: 1.25rem * 1.6 */
         --font-text-lg-line-height: 1.5em;
 
-        --font-text-md-size: 1rem;
+        --font-text-md-size: 1.6rem; /* 16px: 1rem * 1.6 */
         --font-text-md-line-height: 1.5em;
 
-        --font-text-sm-size: 0.75rem;
+        --font-text-sm-size: 1.2rem; /* 12px: 0.75rem * 1.6 */
         --font-text-sm-line-height: 1.5em;
 
         /* New Typography System - Font Weights */
@@ -336,13 +336,13 @@
         --payment-terms-background-color: {{ settings.colors_background_1 }};
       }
 
-      /* Mobile typography adjustments */
+      /* Mobile typography adjustments (Adjusted for 10px rem base) */
       @media screen and (max-width: 749px) {
         :root {
           /* Slightly smaller text sizes for mobile */
-          --font-text-lg-size: 1.125rem; /* 18px instead of 20px */
-          --font-text-md-size: 0.9rem;   /* 14.4px instead of 16px */
-          --font-text-sm-size: 0.7rem;   /* 11.2px instead of 12px */
+          --font-text-lg-size: 1.8rem;   /* 18px: 1.125rem * 1.6 */
+          --font-text-md-size: 1.44rem;  /* 14.4px: 0.9rem * 1.6 */
+          --font-text-sm-size: 1.12rem;  /* 11.2px: 0.7rem * 1.6 */
 
           /* Tighter line heights for mobile */
           --font-display-2xl-line-height: 1.1em;
@@ -357,12 +357,12 @@
         }
       }
 
-      /* Large desktop enhancements */
+      /* Large desktop enhancements (Adjusted for 10px rem base) */
       @media screen and (min-width: 1200px) {
         :root {
           /* Slightly larger text for better readability on large screens */
-          --font-text-lg-size: 1.375rem; /* 22px instead of 20px */
-          --font-text-md-size: 1.125rem; /* 18px instead of 16px */
+          --font-text-lg-size: 2.2rem;   /* 22px: 1.375rem * 1.6 */
+          --font-text-md-size: 1.8rem;   /* 18px: 1.125rem * 1.6 */
         }
       }
 
@@ -398,7 +398,7 @@
       /* Responsive body text - slightly smaller on mobile */
       @media screen and (max-width: 749px) {
         body {
-          font-size: calc(var(--font-text-md-size) * 0.9); /* Slightly smaller on mobile */
+          font-size: calc(var(--font-text-md-size) * 0.9); /* Uses mobile-adjusted --font-text-md-size */
         }
       }
 

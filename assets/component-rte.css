@@ -56,8 +56,8 @@
 .rte h2,
 .rte h3,
 .rte h4 {
-  margin-top: 2.4rem;
-  margin-bottom: 0.8rem;
+  margin-top: 3.84rem; /* 24px: 2.4rem * 1.6 */
+  margin-bottom: 1.28rem; /* 8px: 0.8rem * 1.6 */
 }
 .rte h1:first-child,
 .rte h2:first-child,
@@ -70,19 +70,19 @@
   .rte h2,
   .rte h3,
   .rte h4 {
-    margin-top: 4.8rem;
-    margin-bottom: 0.8rem;
+    margin-top: 7.68rem; /* 48px: 4.8rem * 1.6 */
+    margin-bottom: 1.28rem; /* 8px: 0.8rem * 1.6 */
   }
 }
 .rte div {
   margin: 0;
 }
 .rte > div {
-  margin: 0.8rem 0;
+  margin: 1.28rem 0; /* 8px: 0.8rem * 1.6 */
 }
 @media screen and (min-width: 1200px) {
   .rte > div {
-    margin: 2.4rem 0;
+    margin: 3.84rem 0; /* 24px: 2.4rem * 1.6 */
   }
 }
 .rte > div:first-child {
@@ -92,11 +92,11 @@
   margin-bottom: 0;
 }
 .rte > p {
-  margin: 0.8rem 0;
+  margin: 1.28rem 0; /* 8px: 0.8rem * 1.6 */
 }
 @media screen and (min-width: 1200px) {
   .rte > p {
-    margin: 2.4rem 0;
+    margin: 3.84rem 0; /* 24px: 2.4rem * 1.6 */
   }
 }
 .rte > p:first-child {
@@ -107,18 +107,18 @@
 }
 .rte ol,
 .rte ul {
-  padding-left: 2rem;
-  margin: 0 0 1.6rem 0;
+  padding-left: 3.2rem; /* 20px: 2rem * 1.6 */
+  margin: 0 0 2.56rem 0; /* 16px: 1.6rem * 1.6 */
 }
 @media screen and (min-width: 576px) {
   .rte ol,
   .rte ul {
-    margin: 0 0 1.6rem 2.4rem;
+    margin: 0 0 2.56rem 3.84rem; /* 16px, 24px: 1.6rem * 1.6, 2.4rem * 1.6 */
   }
 }
 .rte li {
   list-style: inherit;
-  margin: 0.8rem 0rem;
+  margin: 1.28rem 0rem; /* 8px: 0.8rem * 1.6 */
 }
 .rte li:last-child {
   margin-bottom: 0;
@@ -139,7 +139,7 @@
 .rte img,
 .rte figure {
   height: auto;
-  margin: 0.8rem 0;
+  margin: 1.28rem 0; /* 8px: 0.8rem * 1.6 */
   border-radius: var(--border-radius-main);
   width: 100%;
   overflow: hidden;
@@ -148,7 +148,7 @@
 @media screen and (min-width: 1200px) {
   .rte img,
   .rte figure {
-    margin: 2.4rem 0;
+    margin: 3.84rem 0; /* 24px: 2.4rem * 1.6 */
   }
 }
 .rte figure > img {
@@ -171,8 +171,8 @@
   display: block;
   overflow-x: auto;
   white-space: nowrap;
-  margin: 0.2rem;
-  width: calc(100% - 0.4rem);
+  margin: 0.32rem; /* 2px: 0.2rem * 1.6 */
+  width: calc(100% - 0.64rem); /* 4px: 0.4rem * 1.6 */
 }
 .rte table::-webkit-scrollbar:horizontal {
   height: 0.4rem;
@@ -187,8 +187,8 @@
 }
 @media screen and (min-width: 750px) {
   .rte table td {
-    padding-left: 1.2rem;
-    padding-right: 1.2rem;
+    padding-left: 1.92rem; /* 12px: 1.2rem * 1.6 */
+    padding-right: 1.92rem; /* 12px: 1.2rem * 1.6 */
   }
 }
 .rte iframe {
@@ -206,8 +206,8 @@
   align-items: flex-start;
   gap: 0.8rem;
   width: 100%;
-  padding: 3rem;
-  margin: 2.4rem 0;
+  padding: 4.8rem; /* 30px: 3rem * 1.6 */
+  margin: 3.84rem 0; /* 24px: 2.4rem * 1.6 */
   border: none;
   font-family: var(--font-heading-family);
   border-radius: var(--border-radius-main);
@@ -223,7 +223,7 @@
 /* Tablet: Intermediate blockquote size */
 @media screen and (min-width: 750px) and (max-width: 1199px) {
   .rte blockquote {
-    padding: 3.5rem;
+    padding: 5.6rem; /* 35px: 3.5rem * 1.6 */
     font-size: calc(var(--font-text-lg-size) * 1.2); /* Slightly larger than Text lg */
   }
 }
@@ -231,8 +231,8 @@
 /* Desktop: Larger blockquotes for emphasis */
 @media screen and (min-width: 1200px) {
   .rte blockquote {
-    margin: 4.8rem 0;
-    padding: 4rem;
+    margin: 7.68rem 0; /* 48px: 4.8rem * 1.6 */
+    padding: 6.4rem; /* 40px: 4rem * 1.6 */
     font-size: var(--font-display-sm-size); /* Display sm (30px) for emphasis */
     line-height: var(--font-display-sm-line-height);
   }
@@ -241,8 +241,8 @@
 /* Mobile: Smaller padding and margins */
 @media screen and (max-width: 749px) {
   .rte blockquote {
-    margin: 1.6rem 0;
-    padding: 2rem;
+    margin: 2.56rem 0; /* 16px: 1.6rem * 1.6 */
+    padding: 3.2rem; /* 20px: 2rem * 1.6 */
   }
 }
 .rte blockquote + * {
@@ -316,10 +316,10 @@
   }
 }
 .rte blockquote > * {
-  padding-left: 6.4rem;
+  padding-left: 10.24rem; /* 64px: 6.4rem * 1.6 */
 }
 .rte blockquote img {
-  margin-top: 1.6rem;
+  margin-top: 2.56rem; /* 16px: 1.6rem * 1.6 */
   margin-bottom: 0;
 }
 .rte blockquote p {

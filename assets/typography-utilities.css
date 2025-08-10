@@ -1,7 +1,9 @@
 /*
  * New Typography System Utilities
  * Based on Figma specifications with Display and Text scales
- * Font weights: Regular (400), Medium (500), Bold (700)
+ * Font weights: Regular (400), Medium (600), Bold (700)
+ * Adjusted for 10px rem base (1rem = 10px instead of 16px)
+ * All rem values multiplied by 1.6 to achieve correct visual sizes
  */
 
 /* ===== DISPLAY TYPOGRAPHY CLASSES ===== */
@@ -212,21 +214,21 @@
   }
 }
 
-/* Tablet: Intermediate scaling */
+/* Tablet: Intermediate scaling (calculations work with adjusted rem values) */
 @media screen and (min-width: 750px) and (max-width: 989px) {
   .display-2xl {
-    font-size: calc(var(--font-display-2xl-size) * 0.9);
+    font-size: calc(var(--font-display-2xl-size) * 0.9); /* 90% of 7.2rem = 6.48rem (64.8px) */
   }
 
   .display-xl {
-    font-size: calc(var(--font-display-xl-size) * 0.95);
+    font-size: calc(var(--font-display-xl-size) * 0.95); /* 95% of 6rem = 5.7rem (57px) */
   }
 }
 
 /* Large desktop: Slightly larger for better readability */
 @media screen and (min-width: 1200px) {
   .display-2xl {
-    font-size: calc(var(--font-display-2xl-size) * 1.05);
+    font-size: calc(var(--font-display-2xl-size) * 1.05); /* 105% of 7.2rem = 7.56rem (75.6px) */
   }
 }
 
