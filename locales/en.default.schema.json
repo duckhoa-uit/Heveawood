@@ -1146,6 +1146,24 @@
 					"label": "Eco"
 				}
 			},
+			"icon_pack_40": {
+				"label": "Icon",
+				"options__1": {
+					"label": "None"
+				},
+				"options__2": {
+					"label": "Shield"
+				},
+				"options__3": {
+					"label": "Coins hand"
+				},
+				"options__4": {
+					"label": "Settings"
+				},
+				"options__5": {
+					"label": "Heart"
+				}
+			},
 			"indents": {
 				"label": "Indents",
 				"options__1": {

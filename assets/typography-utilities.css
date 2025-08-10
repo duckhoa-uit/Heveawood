@@ -348,6 +348,20 @@
   }
 }
 
+/* ===== COLOR UTILITY CLASSES ===== */
+
+/* Text color using button background color variable */
+.text-button-color {
+  color: rgb(var(--color-button)) !important;
+}
+
+/* Link-style text with button color, underline, and regular font-weight */
+.text--link {
+  color: rgb(var(--color-button)) !important;
+  text-decoration: underline !important;
+  font-weight: 400 !important;
+}
+
 /* Print styles */
 @media print {
   .display-2xl { font-size: 24pt; }

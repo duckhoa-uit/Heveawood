@@ -178,48 +178,48 @@
         "column-1": {
           "type": "column",
           "settings": {
-            "icon": "globe",
-            "heading": "Tvrdost",
-            "text": "Hevea má Brinell 4,2 – o 15 % tvrdší než dub, přesto se lehce opracovává.",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "secondary",
-            "full_link": true
+            "icon": "shield",
+            "heading": "Dlouho vydrží",
+            "text": "Díky tvrdosti a odolnosti dřeva Hevea vydrží Váš nábytek velké zátěže a opotřebení. Tím si zachová svoji strukuru a vzhled i v průběhu času.",
+            "button_label": "Vlastnosti dřeva hevea",
+            "button_link": "shopify://policies/privacy-policy",
+            "button_style": "tertiary",
+            "full_link": false
           }
         },
         "column-2": {
           "type": "column",
           "settings": {
-            "icon": "return",
-            "heading": "Ekologický původ",
-            "text": "Dřevo pochází z recyklovaných kaučukových plantáží, které by jinak skončily na skládce.",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "secondary",
-            "full_link": true
+            "icon": "coins-hand",
+            "heading": "Ušetříte",
+            "text": "Vzhledově stejné a s lepšími vlastnostmi než tuzemské dubové dřevo za téměř poloviční ceny! ",
+            "button_label": "Nakupovat",
+            "button_link": "shopify://policies/privacy-policy",
+            "button_style": "tertiary",
+            "full_link": false
           }
         },
         "column-3": {
           "type": "column",
           "settings": {
-            "icon": "lock",
-            "heading": "Řežeme na míru",
-            "text": "Potřebujete atypický rozměr? Řezání CNC ±0,5 mm, hotovo do 24 h.",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "secondary",
-            "full_link": true
+            "icon": "settings",
+            "heading": "Lehce se s ním pracuje",
+            "text": "Odolnost této dřeviny usnadňuje manipulaci a zpracování, protože je méně náchylné k štěpení nebo praskání. Dobře se lepí, barví, moří a další.",
+            "button_label": "Technické vlastnosti dřeva",
+            "button_link": "shopify://policies/privacy-policy",
+            "button_style": "tertiary",
+            "full_link": false
           }
         },
         "column_7iqRm7": {
           "type": "column",
           "settings": {
-            "icon": "globe",
-            "heading": "Sklad v ČR",
-            "text": "6 000 m² materiálu v Pardubicích a Praze = bleskové dodání bez celních průtahů.",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "secondary",
+            "icon": "heart",
+            "heading": "Chráníte lesy a přírodu",
+            "text": "Používáním dřeva Hevea z existujicích plantáží po výrobě kaučuku snižujete poptávku po dřevu z původních lesů, čímž zmírňujete odlesňování a chráníte životní prostředí.",
+            "button_label": "O nás",
+            "button_link": "shopify://policies/privacy-policy",
+            "button_style": "tertiary",
             "full_link": false
           }
         }
@@ -231,18 +231,20 @@
         "column_7iqRm7"
       ],
       "settings": {
-        "columns_per_row": 2,
+        "columns_per_row": 4,
         "content_alignment": "center",
+        "section_heading": "Vlastnosti dřeva hevea",
+        "section_heading_size": "display-sm display-sm--medium",
         "swipe_on_mobile": true,
-        "card_heading_size": "h4",
+        "card_heading_size": "text-lg text-lg--medium",
         "image_size": "medium",
         "image_ratio": "1/1",
         "object_fit": "cover",
-        "show_border_top": true,
-        "show_border_bottom": true,
+        "show_border_top": false,
+        "show_border_bottom": false,
         "margin_top": "xs",
         "margin_bottom": "no-indent",
-        "padding_top": "xs",
+        "padding_top": "no-indent",
         "padding_bottom": "xs"
       }
     },

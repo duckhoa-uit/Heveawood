@@ -4774,6 +4774,9 @@ details:not([open]) > .header__icon--menu .icon-close {
   flex-wrap: wrap;
   gap: 1.6rem;
 }
+.section-header__wrapper--center {
+  justify-content: center;
+}
 .section-header__wrapper--end {
   justify-content: flex-end;
 }

@@ -1,0 +1,3 @@
+[environments.dev]
+store = "ip721v-ec.myshopify.com"
+live-reload = 'off'
