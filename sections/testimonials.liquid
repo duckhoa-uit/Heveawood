@@ -38,7 +38,7 @@
         <div class="testimonials__content">
           <div class="testimonials__static-info">
             {%- if section.settings.subheading != blank -%}
-              <div class="testimonials__subheading subheading">
+              <div class="testimonials__subheading subheading text-sm text-sm--medium text-color-secondary">
                 {{ section.settings.subheading }}
               </div>
             {%- endif -%}
@@ -48,7 +48,7 @@
               </h2>
             {%- endif -%}
             {% if section.settings.text != blank %}
-              <div class="testimonials__text richtext__content">
+              <div class="testimonials__text richtext__content text-md text-color-secondary">
                 {{ section.settings.text }}
               </div>
             {% endif %}
@@ -76,7 +76,7 @@
                       </div>
                     {% endif %}
                     {% if block.settings.text != blank %}
-                      <div class="testimonials__slide-review richtext__content">
+                      <div class="testimonials__slide-review richtext__content text-md">
                         {{ block.settings.text }}
                       </div>
                     {% endif %}
@@ -88,7 +88,7 @@
                           </span>
                         {% endif %}
                         {% if block.settings.author_name != blank %}
-                          <span class="testimonials__slide-author">
+                          <span class="testimonials__slide-author text-sm text-sm--medium">
                             {{- 'sections.testimonials.reviewed_by' | t: author: block.settings.author_name | escape -}}
                           </span>
                         {% endif %}
@@ -308,23 +308,23 @@
       "id": "heading_size",
       "options": [
         {
-          "value": "h4",
+          "value": "display-sm display-sm--medium",
           "label": "t:sections.all.heading_size.options__4.label"
         },
         {
-          "value": "h3",
+          "value": "display-md display-md--medium",
           "label": "t:sections.all.heading_size.options__1.label"
         },
         {
-          "value": "h2",
+          "value": "display-lg display-lg--medium",
           "label": "t:sections.all.heading_size.options__2.label"
         },
         {
-          "value": "h1",
+          "value": "display-xl display-xl--medium",
           "label": "t:sections.all.heading_size.options__3.label"
         }
       ],
-      "default": "h2",
+      "default": "display-lg display-lg--medium",
       "label": "t:sections.all.heading_size.label"
     },
     {

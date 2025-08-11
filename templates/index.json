@@ -306,8 +306,85 @@
         "margin_bottom": "no-indent"
       }
     },
+    "multicolumn_fQJ6VR": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_KmALd6": {
+          "type": "column",
+          "settings": {
+            "icon": "shield",
+            "heading": "Vyrábíme vlastní produkty",
+            "text": "Díky přímé kontrole nad celým procesem garantujeme vysoký standard kvality a spolehlivost dodávek.",
+            "button_label": "Vlastnosti dřeva hevea",
+            "button_link": "shopify://policies/privacy-policy",
+            "button_style": "tertiary",
+            "full_link": false
+          }
+        },
+        "column_8NDEwL": {
+          "type": "column",
+          "settings": {
+            "icon": "coins-hand",
+            "heading": "Široká nabídka profilů",
+            "text": "V našem sortimentu najdete různé formáty spárovek z Hevea – připravené rovnou k použití nebo dalšímu zpracování",
+            "button_label": "Nakupovat",
+            "button_link": "shopify://policies/privacy-policy",
+            "button_style": "tertiary",
+            "full_link": false
+          }
+        },
+        "column_ttzKax": {
+          "type": "column",
+          "settings": {
+            "icon": "settings",
+            "heading": "Na trhu jsme už přes 20 let",
+            "text": "Stojíme na pevných základech, budovaných důvěrou a poctivou prací v oblasti masivního dřeva.",
+            "button_label": "O nás",
+            "button_link": "shopify://policies/privacy-policy",
+            "button_style": "tertiary",
+            "full_link": false
+          }
+        },
+        "column_tmQMQk": {
+          "type": "column",
+          "settings": {
+            "icon": "heart",
+            "heading": "Chráníte lesy a přírodu",
+            "text": "Používáním dřeva Hevea z existujicích plantáží po výrobě kaučuku snižujete poptávku po dřevu z původních lesů, čímž zmírňujete odlesňování a chráníte životní prostředí.",
+            "button_label": "O nás",
+            "button_link": "shopify://policies/privacy-policy",
+            "button_style": "tertiary",
+            "full_link": false
+          }
+        }
+      },
+      "block_order": [
+        "column_KmALd6",
+        "column_8NDEwL",
+        "column_ttzKax",
+        "column_tmQMQk"
+      ],
+      "settings": {
+        "columns_per_row": 4,
+        "content_alignment": "center",
+        "section_heading": "Proč nakupovat u nás?",
+        "section_heading_size": "display-sm display-sm--medium",
+        "swipe_on_mobile": true,
+        "card_heading_size": "text-lg text-lg--medium",
+        "image_size": "medium",
+        "image_ratio": "1/1",
+        "object_fit": "cover",
+        "show_border_top": false,
+        "show_border_bottom": false,
+        "margin_top": "xs",
+        "margin_bottom": "no-indent",
+        "padding_top": "m",
+        "padding_bottom": "xs"
+      }
+    },
     "popular-products-2": {
       "type": "popular-products",
+      "disabled": true,
       "settings": {
         "product_list": [
           "kuchynska-pracovni-deska-hevea-cink-ab-38-620-mm",
@@ -391,6 +468,7 @@
         "block_2",
         "block_3"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "background-3",
         "section_size": "container",
@@ -415,9 +493,10 @@
         "testimonials_slide_1": {
           "type": "testimonials_slide",
           "settings": {
+            "image": "shopify://shop_images/c8dc81da39d668114b883fcd4354e2932458279d.jpg",
             "text": "A satisfied customer’s words will be displayed here, sharing their thoughts on the product.",
-            "product_name": "Customer Name Here",
-            "author_name": "Author Name",
+            "product_name": "",
+            "author_name": "Keira Ito",
             "enable_stars": true,
             "rating": 5
           }
@@ -452,15 +531,15 @@
         "layout": "image_right",
         "image_size": "16/9",
         "is_loop": true,
-        "is_autoplay": true,
+        "is_autoplay": false,
         "is_hover_stop_autoplay": true,
         "show_arrows": true,
         "slideshow_speed": 0.8,
         "slideshow_delay": 3,
-        "subheading": "Testimonials",
-        "heading": "Here Can Be an Overview of the Number of Satisfied Customers",
-        "heading_size": "h2",
-        "text": "Show how many trust your brand and love products",
+        "subheading": "Hodnocení",
+        "heading": "We Appreciate Your Feedback",
+        "heading_size": "display-lg display-lg--medium",
+        "text": "4.5 Out of 5 Stars from Over 325 Reviews",
         "margin_top": "m",
         "margin_bottom": "no-indent"
       }
@@ -546,6 +625,7 @@
     "multicolumn",
     "popular-products-1",
     "image-banner",
+    "multicolumn_fQJ6VR",
     "popular-products-2",
     "product-slider",
     "testimonials",
