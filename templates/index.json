@@ -574,8 +574,8 @@
         "accordion-1": {
           "type": "accordion",
           "settings": {
-            "question": "Here can be a commonly asked question about your product or service.",
-            "answer": "Here can be a brief but clear response to the question, giving customers a quick answer without unnecessary details.",
+            "question": "Can I customize furniture pieces?",
+            "answer": "Yes, many of our furniture pieces can be customized to match your preferences. You can choose from a variety of fabrics, finishes, and colors. Please visit our customization section for more details or",
             "answer_richtext": "",
             "default_open": true
           }
@@ -583,7 +583,7 @@
         "accordion-2": {
           "type": "accordion",
           "settings": {
-            "question": "Here can be a commonly asked question about your product or service.",
+            "question": "What types of products do you offer?",
             "answer": "Here can be a brief but clear response to the question, giving customers a quick answer without unnecessary details.",
             "answer_richtext": "",
             "default_open": false
@@ -592,7 +592,7 @@
         "accordion-3": {
           "type": "accordion",
           "settings": {
-            "question": "Here can be a commonly asked question about your product or service.",
+            "question": "How can I track my order?",
             "answer": "Here can be a brief but clear response to the question, giving customers a quick answer without unnecessary details.",
             "answer_richtext": "",
             "default_open": false
@@ -606,13 +606,13 @@
       ],
       "settings": {
         "section_heading": "Frequently Asked Questions",
-        "section_heading_size": "h2",
-        "section_button_label": "See Details",
-        "section_button_link": "",
+        "section_heading_size": "display-sm display-sm--medium",
+        "section_button_label": "",
+        "section_button_link": "shopify://pages/o-nas",
         "section_button_style": "secondary",
         "show_border_top": false,
         "show_border_bottom": false,
-        "margin_top": "m",
+        "margin_top": "no-indent",
         "margin_bottom": "no-indent",
         "padding_top": "s",
         "padding_bottom": "m"

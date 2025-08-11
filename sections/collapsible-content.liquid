@@ -31,7 +31,7 @@
               >
                 <div class="collapsible-content__toggle-group">
                   {%- if block.settings.question != blank -%}
-                    <h4 class="collapsible-content__question h4">
+                    <h4 class="collapsible-content__question text-lg text-lg--bold">
                       {{ block.settings.question | escape }}
                     </h4>
                   {%- endif -%}
@@ -48,7 +48,7 @@
                     style="display: block;"
                   {% endif %}
                 >
-                  <div class="collapsible-content__answer-inner richtext__content">
+                  <div class="collapsible-content__answer-inner richtext__content text-md text-color-secondary">
                     {%- if block.settings.answer != blank -%}
                       <p>{{- block.settings.answer -}}</p>
                     {%- endif -%}
@@ -86,28 +86,29 @@
       "default": "t:sections.collapsible-content.settings.section_heading.default",
       "label": "t:sections.all.heading.label"
     },
+
     {
       "type": "select",
       "id": "section_heading_size",
       "options": [
         {
-          "value": "h4",
+          "value": "display-xs display-xs--medium",
           "label": "t:sections.all.heading_size.options__4.label"
         },
         {
-          "value": "h3",
+          "value": "display-sm display-sm--medium",
           "label": "t:sections.all.heading_size.options__1.label"
         },
         {
-          "value": "h2",
+          "value": "display-md display-md--medium",
           "label": "t:sections.all.heading_size.options__2.label"
         },
         {
-          "value": "h1",
+          "value": "display-lg display-lg--medium",
           "label": "t:sections.all.heading_size.options__3.label"
         }
       ],
-      "default": "h2",
+      "default": "display-sm display-sm--medium",
       "label": "t:sections.all.heading_size.label"
     },
     {
