@@ -362,6 +362,27 @@
   font-weight: 400 !important;
 }
 
+/* Color override utilities for typography classes */
+.text-color-title {
+  color: rgb(var(--color-foreground-title)) !important;
+}
+
+.text-color-body {
+  color: rgb(var(--color-foreground)) !important;
+}
+
+.text-color-secondary {
+  color: rgb(var(--color-foreground-secondary)) !important;
+}
+
+.text-color-accent {
+  color: rgb(var(--color-button)) !important;
+}
+
+.text-color-inherit {
+  color: inherit !important;
+}
+
 /* Print styles */
 @media print {
   .display-2xl { font-size: 24pt; }

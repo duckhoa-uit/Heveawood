@@ -1301,6 +1301,10 @@
 						"label": "t:settings_schema.pagination.settings.button_style.options__2.label"
 					},
 					{
+						"value": "outlined",
+						"label": "t:settings_schema.pagination.settings.button_style.options__4.label"
+					},
+					{
 						"value": "tertiary",
 						"label": "t:settings_schema.pagination.settings.button_style.options__3.label"
 					}

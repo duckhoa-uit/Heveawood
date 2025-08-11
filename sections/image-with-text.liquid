@@ -93,9 +93,9 @@
             </div>
           {% endif %}
           {% if section.settings.button_label != blank %}
-            {% render 'button', 
-              btn_label: section.settings.button_label, 
-              btn_link: section.settings.button_link, 
+            {% render 'button',
+              btn_label: section.settings.button_label,
+              btn_link: section.settings.button_link,
               btn_size: 'small',
               btn_style: button_style,
               add_classes: 'image-with-text__button focus-inset'
@@ -304,6 +304,10 @@
         {
           "value": "secondary",
           "label": "t:sections.all.button.button_style.options__2.label"
+        },
+        {
+          "value": "outlined",
+          "label": "t:sections.all.button.button_style.options__6.label"
         },
         {
           "value": "tertiary",

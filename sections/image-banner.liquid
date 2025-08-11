@@ -91,7 +91,7 @@
             endif
           %}
           {% capture sizes %}
-            (min-width: 1200px) {{ desktop_width }}, 
+            (min-width: 1200px) {{ desktop_width }},
             {% if width_adapt_ratio != 1 %}
               {{ width_adapt_ratio }}px
             {% else %}
@@ -115,7 +115,7 @@
       {%- endif -%}
       <div class="image-banner__content image-banner__content--{{ section.settings.content_alignment }}{% if section_layout == 'overlay' and section.settings.percent == blank %} image-banner__content--only-content{% endif %}">
         {%- if section.settings.subheading != blank -%}
-          <div class="image-banner__subheading subheading">
+          <div class="image-banner__subheading subheading text-sm text-sm--medium text-color-secondary">
             {{ section.settings.subheading }}
           </div>
         {%- endif -%}
@@ -125,18 +125,33 @@
           </h2>
         {%- endif -%}
         {%- if section.settings.text != blank -%}
-          <div class="image-banner__text richtext__content">
+          <div class="image-banner__text richtext__content text-color-secondary">
             {{ section.settings.text }}
           </div>
         {%- endif -%}
-        {% if section.settings.button_label != blank %}
-          {% render 'button',
-            btn_label: section.settings.button_label,
-            btn_link: section.settings.button_link,
-            btn_size: 'primary',
-            btn_style: section.settings.button_style,
-            add_classes: 'image-banner__button focus-inset'
-          %}
+        {% if section.settings.primary_button_label != blank
+          or section.settings.secondary_button_label != blank
+        %}
+          <div class="image-banner__buttons">
+            {% if section.settings.primary_button_label != blank %}
+              {% render 'button',
+                btn_label: section.settings.primary_button_label,
+                btn_link: section.settings.primary_button_link,
+                btn_size: 'primary',
+                btn_style: section.settings.primary_button_style,
+                add_classes: 'image-banner__button focus-inset'
+              %}
+            {% endif %}
+            {% if section.settings.secondary_button_label != blank %}
+              {% render 'button',
+                btn_label: section.settings.secondary_button_label,
+                btn_link: section.settings.secondary_button_link,
+                btn_size: 'primary',
+                btn_style: section.settings.secondary_button_style,
+                add_classes: 'image-banner__button focus-inset'
+              %}
+            {% endif %}
+          </div>
         {% endif %}
       </div>
       {%- if section_layout == 'standard' or section.settings.percent != blank -%}
@@ -152,8 +167,8 @@
                   endif
                 %}
                 {%- capture sizes -%}
-                  (min-width: 1200px) {{desktop_width}}, 
-                  (min-width: 990px) 50vw, 
+                  (min-width: 1200px) {{desktop_width}},
+                  (min-width: 990px) 50vw,
                   100vw
                 {%- endcapture -%}
                 {{
@@ -370,23 +385,23 @@
       "id": "heading_size",
       "options": [
         {
-          "value": "h4",
+          "value": "display-sn display-sn--medium",
           "label": "t:sections.all.heading_size.options__4.label"
         },
         {
-          "value": "h3",
+          "value": "display-md display-md--medium",
           "label": "t:sections.all.heading_size.options__1.label"
         },
         {
-          "value": "h2",
+          "value": "display-lg display-lg--medium",
           "label": "t:sections.all.heading_size.options__2.label"
         },
         {
-          "value": "h1",
+          "value": "display-xl display-xl--medium",
           "label": "t:sections.all.heading_size.options__3.label"
         }
       ],
-      "default": "h2",
+      "default": "display-lg display-lg--medium",
       "label": "t:sections.all.heading_size.label"
     },
     {
@@ -442,23 +457,23 @@
     },
     {
       "type": "header",
-      "content": "t:sections.all.button.header_button.content"
+      "content": "t:sections.all.button.header_button_primary.content"
     },
     {
       "type": "text",
-      "id": "button_label",
+      "id": "primary_button_label",
       "default": "t:sections.image-banner.settings.button_label.default",
       "label": "t:sections.all.button.button_label.label",
       "info": "t:sections.all.button.button_label.info"
     },
     {
       "type": "url",
-      "id": "button_link",
+      "id": "primary_button_link",
       "label": "t:sections.all.button.button_link.label"
     },
     {
       "type": "select",
-      "id": "button_style",
+      "id": "primary_button_style",
       "options": [
         {
           "value": "primary",
@@ -469,6 +484,10 @@
           "label": "t:sections.all.button.button_style.options__2.label"
         },
         {
+          "value": "outlined",
+          "label": "t:sections.all.button.button_style.options__6.label"
+        },
+        {
           "value": "tertiary",
           "label": "t:sections.all.button.button_style.options__3.label"
         }
@@ -476,6 +495,46 @@
       "default": "primary",
       "label": "t:sections.all.button.button_style.label"
     },
+    {
+      "type": "header",
+      "content": "t:sections.all.button.header_button_secondary.content"
+    },
+    {
+      "type": "text",
+      "id": "secondary_button_label",
+      "label": "t:sections.all.button.button_label.label",
+      "info": "t:sections.all.button.button_label.info"
+    },
+    {
+      "type": "url",
+      "id": "secondary_button_link",
+      "label": "t:sections.all.button.button_link.label"
+    },
+    {
+      "type": "select",
+      "id": "secondary_button_style",
+      "options": [
+        {
+          "value": "primary",
+          "label": "t:sections.all.button.button_style.options__1.label"
+        },
+        {
+          "value": "secondary",
+          "label": "t:sections.all.button.button_style.options__2.label"
+        },
+        {
+          "value": "outlined",
+          "label": "t:sections.all.button.button_style.options__6.label"
+        },
+        {
+          "value": "tertiary",
+          "label": "t:sections.all.button.button_style.options__3.label"
+        }
+      ],
+      "default": "tertiary",
+      "label": "t:sections.all.button.button_style.label"
+    },
+
     {
       "type": "header",
       "content": "t:sections.all.section-margin.header.content"

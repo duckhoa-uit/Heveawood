@@ -55,7 +55,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: 1.4rem;
   width: 100%;
 }
 @media screen and (min-width: 990px) {
@@ -83,7 +83,7 @@
 }
 @media screen and (min-width: 990px) {
   .image-banner.standard .image-banner__content {
-    padding: 4rem;
+    padding: 7.7rem 9rem;
   }
 }
 @media screen and (min-width: 990px) {
@@ -119,6 +119,7 @@
 .image-banner__subheading {
   margin: 0;
   max-width: 40rem;
+  text-transform: none !important;
 }
 .image-banner.standard .image-banner__content--left .image-banner__subheading {
   margin-bottom: auto;
@@ -130,36 +131,42 @@
 }
 .image-banner__text {
   max-width: 47.3rem;
+  font-family: var(--font-body-family);
+  font-size: var(--font-text-md-size);
+  line-height: var(--font-text-md-line-height);
+  font-weight: var(--font-weight-regular);
   color: rgb(var(--color-foreground));
-  font-size: calc(var(--font-body-scale) * 1rem);
-  color: rgb(var(--color-foreground));
-}
-@media screen and (min-width: 1200px) {
-  .image-banner__text {
-    font-size: calc(var(--font-body-scale) * 1.2rem);
-  }
 }
 .image-banner.standard .image-banner__text {
   color: rgb(var(--color-foreground-secondary));
 }
 .image-banner__text p {
   margin: 0;
-  font-size: calc(var(--font-body-scale) * 1rem);
+  font-family: var(--font-body-family);
+  font-size: var(--font-text-md-size);
+  line-height: var(--font-text-md-line-height);
+  font-weight: var(--font-weight-regular);
   color: rgb(var(--color-foreground));
-}
-@media screen and (min-width: 1200px) {
-  .image-banner__text p {
-    font-size: calc(var(--font-body-scale) * 1.2rem);
-  }
 }
 .image-banner.standard .image-banner__text p {
   color: rgb(var(--color-foreground-secondary));
 }
-.image-banner__button {
+.image-banner__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
   margin-top: 1.6rem;
 }
-.image-banner.overlay .image-banner__button {
+.image-banner__content--left .image-banner__buttons {
+  justify-content: flex-start;
+}
+.image-banner.overlay .image-banner__buttons {
   margin-top: 1.2rem;
+}
+.image-banner__button {
+  margin-top: 0;
 }
 .image-banner__promo {
   position: relative;

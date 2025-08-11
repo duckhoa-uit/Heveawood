@@ -595,6 +595,9 @@
 					},
 					"options__3": {
 						"label": "Tertiary"
+					},
+					"options__4": {
+						"label": "Outlined"
 					}
 				}
 			}
@@ -882,6 +885,9 @@
 					},
 					"options__5": {
 						"label": "Tag"
+					},
+					"options__6": {
+						"label": "Outlined"
 					}
 				},
 				"button_label": {
