@@ -312,7 +312,7 @@
         "column_KmALd6": {
           "type": "column",
           "settings": {
-            "icon": "shield",
+            "icon": "award",
             "heading": "Vyrábíme vlastní produkty",
             "text": "Díky přímé kontrole nad celým procesem garantujeme vysoký standard kvality a spolehlivost dodávek.",
             "button_label": "Vlastnosti dřeva hevea",
@@ -324,7 +324,7 @@
         "column_8NDEwL": {
           "type": "column",
           "settings": {
-            "icon": "coins-hand",
+            "icon": "three-layers",
             "heading": "Široká nabídka profilů",
             "text": "V našem sortimentu najdete různé formáty spárovek z Hevea – připravené rovnou k použití nebo dalšímu zpracování",
             "button_label": "Nakupovat",
@@ -336,7 +336,7 @@
         "column_ttzKax": {
           "type": "column",
           "settings": {
-            "icon": "settings",
+            "icon": "user-check",
             "heading": "Na trhu jsme už přes 20 let",
             "text": "Stojíme na pevných základech, budovaných důvěrou a poctivou prací v oblasti masivního dřeva.",
             "button_label": "O nás",
