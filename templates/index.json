@@ -544,6 +544,30 @@
         "margin_bottom": "no-indent"
       }
     },
+    "featured_blog": {
+      "type": "featured-blog",
+      "settings": {
+        "blog": "blogy",
+        "post_limit": 4,
+        "columns_per_row": 4,
+        "show_image": true,
+        "show_tags": false,
+        "show_date": true,
+        "show_author": false,
+        "show_excerpt": true,
+        "show_count_comments": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "image_ratio": "16/9",
+        "section_heading": "Most Popular from the Journal",
+        "section_heading_size": "display-sm display-sm--medium",
+        "section_button_label": "Zobrazit vše",
+        "section_button_link": "shopify://blogs/blogy",
+        "section_button_style": "secondary",
+        "margin_top": "m",
+        "margin_bottom": "m"
+      }
+    },
     "collapsible-content": {
       "type": "collapsible-content",
       "blocks": {
@@ -593,30 +617,6 @@
         "padding_top": "s",
         "padding_bottom": "m"
       }
-    },
-    "featured_blog": {
-      "type": "featured-blog",
-      "settings": {
-        "blog": "journal",
-        "post_limit": 4,
-        "columns_per_row": 4,
-        "show_image": true,
-        "show_tags": true,
-        "show_date": true,
-        "show_author": false,
-        "show_excerpt": true,
-        "show_count_comments": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "image_ratio": "16/9",
-        "section_heading": "Introduction to featured blog posts",
-        "section_heading_size": "h3",
-        "section_button_label": "View All",
-        "section_button_link": "",
-        "section_button_style": "secondary",
-        "margin_top": "m",
-        "margin_bottom": "m"
-      }
     }
   },
   "order": [
@@ -629,7 +629,7 @@
     "popular-products-2",
     "product-slider",
     "testimonials",
-    "collapsible-content",
-    "featured_blog"
+    "featured_blog",
+    "collapsible-content"
   ]
 }

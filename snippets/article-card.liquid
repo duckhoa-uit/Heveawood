@@ -43,7 +43,7 @@
   {%- endif -%}
   <header class="article-card__header">
     <h4
-      class="article-card__title h4"
+      class="article-card__title text-lg text-lg--medium"
       id="Article-{{ article.id }}"
     >
       <a
@@ -54,12 +54,12 @@
       </a>
     </h4>
     {%- if show_excerpt and article.excerpt_or_content.size > 0 -%}
-      <p class="article-card__excerpt {% if template == 'search' %} article-card__excerpt_small {% endif %}">
+      <p class="article-card__excerpt text-md text-color-secondary {% if template == 'search' %} article-card__excerpt_small {% endif %}">
         {{ article.excerpt_or_content | strip_html | truncate: 150 }}
       </p>
     {%- endif -%}
     {%- if show_date or show_tags or show_author -%}
-      <div class="article-card__meta">
+      <div class="article-card__meta text-sm">
         {%- if show_tags and article.tags != blank -%}
           <div class="article-card__tags">
             {% for tag in article.tags %}
@@ -110,7 +110,7 @@
       and article.comments_count > 0
       and blog.comments_enabled?
     -%}
-      <div class="article-card__meta">
+      <div class="article-card__meta text-sm">
         <span class="article-card__comments card__subtitle">
           {{- 'blogs.article.comments' | t: count: article.comments_count -}}
         </span>

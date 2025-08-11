@@ -1519,9 +1519,8 @@ deferred-media {
   overflow: hidden;
   z-index: 1;
 }
-.button--primary, .button--secondary, .button--outlined, .button--tertiary,
+.button--primary, .button--outlined, .button--tertiary,
 .customer .button--primary,
-.customer .button--secondary,
 .customer .button--outlined,
 .customer .button--tertiary {
   display: inline-flex;
@@ -1532,13 +1531,27 @@ deferred-media {
   padding: 0 2rem;
   transition: background-color var(--duration-default), color var(--duration-default), border var(--duration-default);
 }
+/* Secondary button with specific Figma styling */
+.button--secondary,
+.customer .button--secondary {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: auto;
+  min-height: auto;
+  transition: background-color var(--duration-default), color var(--duration-default), border var(--duration-default);
+}
 @media screen and (min-width: 1200px) {
-  .button--primary, .button--secondary, .button--outlined, .button--tertiary,
+  .button--primary, .button--outlined, .button--tertiary,
   .customer .button--primary,
-  .customer .button--secondary,
   .customer .button--outlined,
   .customer .button--tertiary {
     padding: 0 2.5rem;
+  }
+  /* Secondary button maintains Figma-specific padding */
+  .button--secondary,
+  .customer .button--secondary {
+    padding: 11.3px 20px 11.7px 20px;
   }
   .button--primary-size,
   .customer .button--primary-size {
@@ -1571,6 +1584,21 @@ deferred-media {
   background-color: transparent;
   color: rgb(var(--color-button-secondary-text));
   border: 1px solid rgb(var(--color-button-secondary-border));
+  font-family: var(--font-button-family);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-text-sm-size);
+  line-height: 1.2;
+  letter-spacing: var(--font-button-letter-spacing);
+  text-transform: var(--font-button-text-transform);
+  padding: 11.3px 20px 11.7px 20px;
+}
+/* Mobile responsive for secondary button */
+@media screen and (max-width: 989px) {
+  .button--secondary,
+  .customer .button--secondary {
+    font-size: calc(var(--font-text-sm-size) * 0.9);
+    padding: 10px 18px;
+  }
 }
 .button--secondary:not(:disabled):not([aria-disabled=true]):hover,
 .customer .button--secondary:not(:disabled):not([aria-disabled=true]):hover {
@@ -1627,7 +1655,7 @@ deferred-media {
   .customer .button--primary[data-button-text].button--small::after,
   .customer .button--secondary[data-button-text].button--small::after,
   .customer .button--outlined[data-button-text].button--small::after {
-    padding: 1.5rem 5.5rem;
+    padding: 1.2rem 2.1rem;
   }
   .button--primary[data-button-text] > span, .button--secondary[data-button-text] > span, .button--outlined[data-button-text] > span,
   .customer .button--primary[data-button-text] > span,
@@ -1856,7 +1884,7 @@ deferred-media {
   font-weight: var(--font-weight-bold);
   line-height: 1.2em;
   letter-spacing: -0.01em;
-  padding: 1.5rem 5.5rem;
+  padding: 1.2rem 2.1rem;
   min-height: 4rem;
   min-width: auto;
 }
