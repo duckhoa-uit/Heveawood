@@ -1168,6 +1168,15 @@
 				},
 				"options__5": {
 					"label": "Heart"
+				},
+				"options__6": {
+					"label": "Award"
+				},
+				"options__7": {
+					"label": "Three layers"
+				},
+				"options__8": {
+					"label": "User check"
 				}
 			},
 			"indents": {
