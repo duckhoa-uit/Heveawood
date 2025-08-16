@@ -91,7 +91,7 @@
 {%- endif -%}
 
 <{% if section.settings.sticky_header_type != 'none' %}sticky-header data-sticky-type="{{ section.settings.sticky_header_type }}"{% else %}div{% endif %} class="header-wrapper {% if section.settings.enable_border %}header--border{% endif %}">
-	<header class="header header--{{ section.settings.logo_position }} container">
+	<header class="header header--left-logo container">
 		{% render 'header-inner' %}
 	</header>
 </{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>
@@ -209,7 +209,7 @@
 		}
 		this.disclosureLists = this.header.querySelectorAll('.disclosure__list');
 			this.disclosureLists.forEach((disclosureList) => {
-				disclosureList.setAttribute('hidden', true); 
+				disclosureList.setAttribute('hidden', true);
 			});
 		}
 	}
@@ -287,22 +287,7 @@
 			"default": true,
 			"label": "t:sections.header.settings.enable_border.label"
 		},
-		{
-			"type": "select",
-			"id": "logo_position",
-			"options": [
-				{
-					"value": "left-logo",
-					"label": "t:sections.header.settings.logo_position.options__1.label"
-				},
-				{
-					"value": "center-logo",
-					"label": "t:sections.header.settings.logo_position.options__2.label"
-				}
-			],
-			"default": "left-logo",
-			"label": "t:sections.header.settings.logo_position.label"
-		},
+
 		{
 			"type": "image_picker",
 			"id": "logo",
@@ -330,6 +315,12 @@
 			"default": "main-menu",
 			"label": "t:sections.header.settings.menu.label",
 			"info": "t:sections.header.settings.menu.info"
+		},
+		{
+			"type": "link_list",
+			"id": "menu_secondary",
+			"label": "Secondary Menu",
+			"info": "Menu displayed on the right side of primary navigation"
 		},
 		{
 			"type": "checkbox",

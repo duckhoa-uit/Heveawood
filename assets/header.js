@@ -2,13 +2,13 @@
   const initHeader = () => {
     const header = document.querySelector(".shopify-section-header");
     if (!header) return;
-    const menu = document.querySelector(".list-menu--inline");
-    const menuLinks = document.querySelectorAll(".list-menu-item");
+    const allMenus = document.querySelectorAll(".header__inline-menu");
+    const menuLinks = document.querySelectorAll(".header__inline-menu .list-menu-item");
     const search = document.querySelector("details-modal.header__search");
     const searchModal = document.querySelector("details-modal.header__search > details");
     const mobileMenuModal = document.querySelector("header-drawer > details");
     const allSubmenu = document.querySelectorAll(".header__submenu");
-    const allMegaMenuItemsDesktop = document.querySelectorAll('.list-menu--megamenu');
+    const allMegaMenuItemsDesktop = document.querySelectorAll('.header__inline-menu .list-menu--megamenu');
 
     header.addEventListener("keydown", (e) => {
       if (e.code === "Escape" && search.isOpen) {
@@ -78,16 +78,18 @@
       });
     });
 
-    menu?.addEventListener("mouseleave", (e) => {
-      menuLinks.forEach((link) => {
-        link.classList.remove("list-menu-item--inactive");
-        link.classList.remove("list-menu-item--active");
-        link.classList.remove("list-menu--megamenu-visible");
-      });
+    allMenus.forEach((menu) => {
+      menu?.addEventListener("mouseleave", (e) => {
+        menuLinks.forEach((link) => {
+          link.classList.remove("list-menu-item--inactive");
+          link.classList.remove("list-menu-item--active");
+          link.classList.remove("list-menu--megamenu-visible");
+        });
 
-      document.querySelectorAll(".header__submenu-item").forEach((link) => {
-        link.classList.remove("header__submenu-item--inactive");
-      })
+        document.querySelectorAll(".header__submenu-item").forEach((link) => {
+          link.classList.remove("header__submenu-item--inactive");
+        })
+      });
     });
 
     if (header && header.classList.contains("color-background-overlay")) {
@@ -106,7 +108,7 @@
 
     const calcMegaMenuPosition = (items) => {
       const headerRect = header.getBoundingClientRect()
-  
+
       items.forEach((item) => {
         const megaMenuEl = item.querySelector('.mega-menu')
         if (!megaMenuEl) return
