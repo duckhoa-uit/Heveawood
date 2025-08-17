@@ -376,6 +376,8 @@
 			"payment": "Payment Available",
 			"address": "Address",
 			"contacts": "Contacts",
+			"phone": "Telefon",
+			"email": "E-mail",
 			"working_hours": "Working Hours"
 		},
 		"featured_blog": {

@@ -621,9 +621,9 @@
     "contact_map": {
       "type": "contact-map",
       "settings": {
-        "heading": "Get in Touch",
+        "heading": "Máte zájem o spolupráci?",
         "heading_size": "display-sm display-sm--medium",
-        "text": "Send us a message and we'll get back to you as soon as possible.",
+        "text": "Ozvěte se nám – rádi se domluvíme na konkrétních podmínkách.",
         "additional_text": "Send us your request using the form below.",
         "button_style": "primary",
         "map_api_key": "AIzaSyAMaGqY35ngujGjb_NJekyUF5RwoynzfqU",

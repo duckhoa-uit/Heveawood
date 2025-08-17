@@ -8,72 +8,71 @@
  * ------------------------------------------------------------
  */
 {
-	"type": "footer",
-	"name": "t:sections.footer.settings.footer-group.label",
-	"sections": {
-		"footer": {
-			"type": "footer",
-			"blocks": {
-				"footer-0": {
-					"type": "logo_info",
-					"settings": {
-						"logo_width": 110,
-						"enable_border_left": false,
-						"enable_border_right": true
-					}
-				},
-				"footer-1": {
-					"type": "link_list",
-					"settings": {
-						"heading": "Quick links",
-						"menu": "footer",
-						"default_open": false
-					}
-				},
-				"footer-2": {
-					"type": "link_list",
-					"settings": {
-						"heading": "Quick links",
-						"menu": "footer",
-						"default_open": false
-					}
-				},
-				"footer-3": {
-					"type": "link_list",
-					"settings": {
-						"heading": "Quick links",
-						"menu": "footer",
-						"default_open": false
-					}
-				},
-				"footer-4": {
-					"type": "contacts",
-					"settings": {
-						"show_social": true,
-						"enable_border_left": true,
-						"enable_border_right": false
-					}
-				}
-			},
-			"block_order": [
-				"footer-0",
-				"footer-1",
-				"footer-2",
-				"footer-3",
-				"footer-4"
-			],
-			"settings": {
-				"color_scheme": "",
-				"show_border": true,
-				"enable_country_selector": true,
-				"enable_language_selector": true,
-				"payment_enable": true,
-				"show_policy": true,
-				"enable_copyright_date": true,
-				"enable_copyright_shopname": true,
-				"enable_follow_on_shop": false
-			}
-		}
-	},
-	"order": ["footer"]
+  "type": "footer",
+  "name": "t:sections.footer.settings.footer-group.label",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "footer-0": {
+          "type": "logo_info",
+          "settings": {
+            "logo": "shopify://shop_images/heveawood-dark.png",
+            "logo_width": 135,
+            "description": "Jsme rodinná firma, která už od roku 2003 přináší truhlářům kvalitní alternativu k dubu – dřevo Hevea. Dovážíme ho přímo z vietnamských plantáží a stavíme na tom, co je pro nás klíčové: kvalita, dostupnost, ekologie a spolehlivost pro každé řemeslo.",
+            "enable_border_left": false,
+            "enable_border_right": true
+          }
+        },
+        "footer-1": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Produkty",
+            "menu": "produkty",
+            "default_open": false
+          }
+        },
+        "footer-2": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Další stránky",
+            "menu": "dal-str-nky",
+            "default_open": false
+          }
+        },
+        "footer-4": {
+          "type": "contacts",
+          "settings": {
+            "address": "N & H spol. s r.o. Nová kolonie 2604/8, 155 00 Praha 5",
+            "phone": "+420 774 434 881",
+            "email": "info@heveawood.cz",
+            "working_hours": "Provide working hours for your business.",
+            "show_social": true,
+            "enable_border_left": true,
+            "enable_border_right": false
+          }
+        }
+      },
+      "block_order": [
+        "footer-0",
+        "footer-1",
+        "footer-2",
+        "footer-4"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "show_border": true,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": true,
+        "show_policy": true,
+        "enable_copyright_date": true,
+        "enable_copyright_shopname": true,
+        "enable_follow_on_shop": false
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
 }

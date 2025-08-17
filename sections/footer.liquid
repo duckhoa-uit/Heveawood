@@ -27,7 +27,7 @@
                       {% endif %}
                     >
                       <summary>
-                        <h5 class="footer-block__heading h5">
+                        <h5 class="footer-block__heading text-sm text-sm--medium">
                           {{ block.settings.heading | escape }}
                         </h5>
                         {% render 'icon-arrow' %}
@@ -55,7 +55,7 @@
                   {{ block.shopify_attributes }}
                 >
                   {%- if block.settings.heading != blank -%}
-                    <h5 class="footer-block__heading h5">
+                    <h5 class="footer-block__heading text-sm text-sm--medium">
                       {{- block.settings.heading | escape -}}
                     </h5>
                   {%- endif -%}
@@ -132,7 +132,7 @@
                     {%- endif -%}
                   </a>
                   {%- if block.settings.description != blank -%}
-                    <div class="footer-block__text">
+                    <div class="footer-block__text text-sm">
                       {{ block.settings.description }}
                     </div>
                   {%- endif -%}
@@ -142,51 +142,52 @@
                   class="footer-block footer-block--contacts {% if block.settings.enable_border_left %}section_border_left{% endif %} {% if block.settings.enable_border_right %}section_border_right{% endif %}"
                   {{ block.shopify_attributes }}
                 >
-                  {%- if block.settings.address != blank -%}
+                  {%- if block.settings.address_1 != blank -%}
                     <div class="footer-block__contacts">
-                      <h5 class="footer-block__contacts-label h5">
-                        {{ 'sections.footer.address' | t }}
+                      <h5 class="footer-block__contacts-label text-sm text-sm--medium">
+                        {{ block.settings.address_1_label | default: 'Address 1' }}
                       </h5>
                       <p class="footer-block__contacts-text">
-                        {{ block.settings.address }}
+                        {{ block.settings.address_1 | newline_to_br }}
                       </p>
                     </div>
                   {%- endif -%}
-                  {%- if block.settings.phone != blank
-                    or block.settings.email != blank
-                  -%}
+                  {%- if block.settings.address_2 != blank -%}
                     <div class="footer-block__contacts">
-                      <h5 class="footer-block__contacts-label h5">
-                        {{ 'sections.footer.contacts' | t }}
-                      </h5>
-                      {%- if block.settings.phone != blank -%}
-                        <a
-                          href="tel:{{- block.settings.phone -}}"
-                          class="footer-block__contacts-text"
-                          aria-label="{{ block.settings.phone }}"
-                        >
-                          {{ block.settings.phone }}
-                        </a>
-                      {%- endif -%}
-                      {%- if block.settings.email != blank -%}
-                        <a
-                          href="mailto:{{- block.settings.email -}}"
-                          class="footer-block__contacts-text"
-                          aria-label="{{ block.settings.email }}"
-                        >
-                          {{ block.settings.email }}
-                        </a>
-                      {%- endif -%}
-                    </div>
-                  {%- endif -%}
-                  {%- if block.settings.working_hours != blank -%}
-                    <div class="footer-block__contacts">
-                      <h5 class="footer-block__contacts-label h5">
-                        {{ 'sections.footer.working_hours' | t }}
+                      <h5 class="footer-block__contacts-label text-sm text-sm--medium">
+                        {{ block.settings.address_2_label | default: 'Address 2' }}
                       </h5>
                       <p class="footer-block__contacts-text">
-                        {{ block.settings.working_hours }}
+                        {{ block.settings.address_2 | newline_to_br }}
                       </p>
+                    </div>
+                  {%- endif -%}
+                  {%- if block.settings.phone != blank -%}
+                    <div class="footer-block__contacts">
+                      <h5 class="footer-block__contacts-label text-sm text-sm--medium">
+                        {{ 'sections.footer.phone' | t }}
+                      </h5>
+                      <a
+                        href="tel:{{- block.settings.phone -}}"
+                        class="footer-block__contacts-text"
+                        aria-label="{{ block.settings.phone }}"
+                      >
+                        {{ block.settings.phone }}
+                      </a>
+                    </div>
+                  {%- endif -%}
+                  {%- if block.settings.email != blank -%}
+                    <div class="footer-block__contacts">
+                      <h5 class="footer-block__contacts-label text-sm text-sm--medium">
+                        {{ 'sections.footer.email' | t }}
+                      </h5>
+                      <a
+                        href="mailto:{{- block.settings.email -}}"
+                        class="footer-block__contacts-text"
+                        aria-label="{{ block.settings.email }}"
+                      >
+                        {{ block.settings.email }}
+                      </a>
                     </div>
                   {%- endif -%}
                   {%- if block.settings.show_social -%}
@@ -729,10 +730,28 @@
       "limit": 1,
       "settings": [
         {
-          "type": "inline_richtext",
-          "id": "address",
-          "default": "t:sections.footer.blocks.contacts.settings.address.default",
-          "label": "t:sections.footer.blocks.contacts.settings.address.label"
+          "type": "text",
+          "id": "address_1_label",
+          "default": "Sídlo společnosti",
+          "label": "Address 1 Label"
+        },
+        {
+          "type": "textarea",
+          "id": "address_1",
+          "default": "N & H spol. s r.o.\nNová kolonie 2604/8, 155 00 Praha 5",
+          "label": "Address 1"
+        },
+        {
+          "type": "text",
+          "id": "address_2_label",
+          "default": "Vzorkovna",
+          "label": "Address 2 Label"
+        },
+        {
+          "type": "textarea",
+          "id": "address_2",
+          "default": "N & H spol. s r.o.\nLibuška 319/126, 142 00 Praha 4\n(V přední administrativní budově – vedle autobus. zastávky Sídliště Písnice)",
+          "label": "Address 2"
         },
         {
           "type": "text",
