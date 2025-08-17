@@ -64,7 +64,7 @@
       ],
       "settings": {
         "color_scheme": "background-2",
-        "show_border": false,
+        "show_border": true,
         "enable_country_selector": true,
         "enable_language_selector": true,
         "payment_enable": true,
