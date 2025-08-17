@@ -364,7 +364,7 @@
   .shopify-policy__container-sm,
   .container,
   .shopify-policy__container {
-    max-width: 1728px;
+    max-width: 172.8rem; /* 1728px converted to rem */
   }
 }
 /* Base */
@@ -2719,7 +2719,7 @@ input[type="radio"]:focus-visible + label {
 .quantity {
   position: relative;
   width: 10.1rem;
-  height: 5rem;
+  height: 5.6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -375,6 +375,10 @@
   color: rgb(var(--color-foreground-secondary)) !important;
 }
 
+.text-color-tertiary {
+  color: rgb(var(--color-foreground-tertiary)) !important;
+}
+
 .text-color-accent {
   color: rgb(var(--color-button)) !important;
 }

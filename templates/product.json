@@ -21,7 +21,7 @@
         "title": {
           "type": "title",
           "settings": {
-            "heading_size": "h2",
+            "heading_size": "display-lg display-lg--medium",
             "badges_type": "inline",
             "badges_color": ""
           }
@@ -103,7 +103,7 @@
         "desktop_alignment": "left",
         "mobile_alignment": "before",
         "gallery_type": "thumbs_aside",
-        "image_ratio": "3/4",
+        "image_ratio": "3/2",
         "image_fit": "cover",
         "image_fit_modal": "contain",
         "enable_video_looping": false,
@@ -144,9 +144,9 @@
         "products_limit": 4,
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "section_heading": "You May Also Like",
-        "section_heading_size": "h3",
-        "section_button_label": "Shop All",
+        "section_heading": "Mohlo by se vám líbit",
+        "section_heading_size": "display-sm display-sm--medium",
+        "section_button_label": "Všechny produkty",
         "section_button_link": "",
         "section_button_style": "secondary",
         "image_ratio": "3/4",
@@ -155,7 +155,7 @@
         "show_vendor": true,
         "show_collection": false,
         "show_desc": false,
-        "content_alignment": "center",
+        "content_alignment": "left",
         "margin_top": "m",
         "margin_bottom": "m"
       }

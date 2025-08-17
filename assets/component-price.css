@@ -1,5 +1,5 @@
 .price-wrapper {
-  margin-top: 1.6rem;
+  /* margin-top: 1.6rem; */
 }
 
 /* Updated price to match .text-md typography utility */
@@ -78,7 +78,7 @@
 .price--product {
   font-size: var(--font-text-lg-size); /* Text lg for product prices */
   line-height: var(--font-text-lg-line-height);
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-bold);
 }
 
 /* Larger product price on desktop */

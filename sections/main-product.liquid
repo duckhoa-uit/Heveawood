@@ -272,7 +272,7 @@
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'text' -%}
-              <div class="product__text subheading" {{ block.shopify_attributes }}>
+              <div class="product__text subheading text-color-tertiary" {{ block.shopify_attributes }}>
                 {% if block.settings.text != blank %}
                   {% if product.vendor == block.settings.text and settings.enable_vendor_link %}
                     {{ block.settings.text | link_to_vendor: class: 'focus-inset' }}
@@ -1272,19 +1272,19 @@
           "id": "heading_size",
           "options": [
             {
-              "value": "h3",
+              "value": "display-md display-md--medium",
               "label": "t:sections.all.heading_size.options__1.label"
             },
             {
-              "value": "h2",
+              "value": "display-lg display-lg--medium",
               "label": "t:sections.all.heading_size.options__2.label"
             },
             {
-              "value": "h1",
+              "value": "display-xl display-xl--medium",
               "label": "t:sections.all.heading_size.options__3.label"
             }
           ],
-          "default": "h2",
+          "default": "display-lg display-lg--medium",
           "label": "t:sections.all.heading_size.label"
         },
         {
