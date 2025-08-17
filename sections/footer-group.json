@@ -43,7 +43,10 @@
         "footer-4": {
           "type": "contacts",
           "settings": {
-            "address": "N & H spol. s r.o. Nová kolonie 2604/8, 155 00 Praha 5",
+            "address_1_label": "Sídlo společnosti",
+            "address_1": "N & H spol. s r.o.\nNová kolonie 2604/8, 155 00 Praha 5",
+            "address_2_label": "Vzorkovna",
+            "address_2": "N & H spol. s r.o.\nLibuška 319/126, 142 00 Praha 4\n(V přední administrativní budově – vedle autobus. zastávky Sídliště Písnice)",
             "phone": "+420 774 434 881",
             "email": "info@heveawood.cz",
             "working_hours": "Provide working hours for your business.",
@@ -60,8 +63,8 @@
         "footer-4"
       ],
       "settings": {
-        "color_scheme": "",
-        "show_border": true,
+        "color_scheme": "background-2",
+        "show_border": false,
         "enable_country_selector": true,
         "enable_language_selector": true,
         "payment_enable": true,
