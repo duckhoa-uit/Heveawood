@@ -14,51 +14,77 @@
       "blocks": {
         "vendor": {
           "type": "text",
-          "settings": {}
+          "settings": {
+            "text": "{{ product.vendor }}"
+          }
         },
         "title": {
           "type": "title",
-          "settings": {}
+          "settings": {
+            "heading_size": "h2",
+            "badges_type": "inline",
+            "badges_color": ""
+          }
         },
         "price": {
           "type": "price",
-          "settings": {}
+          "settings": {
+            "show_tax_info": false,
+            "show_shipping": false
+          }
         },
         "variant_picker": {
           "type": "variant_picker",
-          "settings": {}
+          "settings": {
+            "picker_type": "button"
+          }
         },
         "popup": {
           "type": "popup",
-          "settings": {}
+          "disabled": true,
+          "settings": {
+            "label": "Popup link text",
+            "page": "",
+            "heading": "Here can be your popup title",
+            "text": "<p>Popular choice with 5-star reviews—see why customers love it. </p>"
+          }
         },
         "buy_buttons": {
           "type": "buy_buttons",
-          "settings": {}
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_quantity": true,
+            "show_gift_card_recipient": false
+          }
         },
         "inventory": {
           "type": "inventory",
-          "settings": {}
+          "disabled": true,
+          "settings": {
+            "show_shipping": true,
+            "min_spend": 500
+          }
         },
         "pickup_availability": {
           "type": "pickup_availability",
+          "disabled": true,
           "settings": {}
         },
         "description": {
           "type": "description",
-          "settings": {}
+          "settings": {
+            "description": ""
+          }
         },
         "dropdown_information_1": {
           "type": "dropdown_information",
-          "settings": {}
-        },
-        "dropdown_information_2": {
-          "type": "dropdown_information",
-          "settings": {}
-        },
-        "dropdown_information_3": {
-          "type": "dropdown_information",
-          "settings": {}
+          "disabled": true,
+          "settings": {
+            "characteristics": false,
+            "heading": "Browse Options",
+            "description": "<p>Color / Size / Style (dynamic filters)</p>",
+            "default_open": false
+          }
         }
       },
       "block_order": [
@@ -71,14 +97,19 @@
         "inventory",
         "pickup_availability",
         "description",
-        "dropdown_information_1",
-        "dropdown_information_2",
-        "dropdown_information_3"
+        "dropdown_information_1"
       ],
       "settings": {
+        "desktop_alignment": "left",
+        "mobile_alignment": "before",
+        "gallery_type": "thumbs_aside",
+        "image_ratio": "3/4",
+        "image_fit": "cover",
+        "image_fit_modal": "contain",
+        "enable_video_looping": false,
+        "show_border_bottom": true,
         "margin_top": "no-indent",
         "margin_bottom": "no-indent",
-        "show_border_bottom": true,
         "padding_bottom": "m"
       }
     },
@@ -86,8 +117,22 @@
       "type": "product-complementary",
       "disabled": true,
       "settings": {
+        "columns_per_row": 4,
+        "products_limit": 4,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "section_heading": "Complementary Products",
+        "section_heading_size": "h3",
         "section_button_label": "Shop All",
+        "section_button_link": "",
+        "section_button_style": "secondary",
+        "image_ratio": "3/4",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_collection": false,
+        "show_desc": false,
+        "content_alignment": "center",
         "margin_top": "m",
         "margin_bottom": "no-indent"
       }
@@ -95,18 +140,188 @@
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
+        "columns_per_row": 4,
+        "products_limit": 4,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "section_heading": "You May Also Like",
+        "section_heading_size": "h3",
         "section_button_label": "Shop All",
+        "section_button_link": "",
+        "section_button_style": "secondary",
+        "image_ratio": "3/4",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_collection": false,
+        "show_desc": false,
+        "content_alignment": "center",
         "margin_top": "m",
-        "margin_bottom": "no-indent"
+        "margin_bottom": "m"
       }
     },
-    "newsletter": {
-      "type": "newsletter",
+    "testimonials_XUtX3L": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonials_slide_fNcdmz": {
+          "type": "testimonials_slide",
+          "settings": {
+            "image": "shopify://shop_images/0bbfd143b1343b4b5a4268fe4422406651d1c4c2.jpg",
+            "text": "A satisfied customer’s words will be displayed here, sharing their thoughts on the product.",
+            "product_name": "Customer Name Here",
+            "author_name": "Author Name",
+            "enable_stars": true,
+            "rating": 5
+          }
+        },
+        "testimonials_slide_wWaifP": {
+          "type": "testimonials_slide",
+          "settings": {
+            "text": "A satisfied customer’s words will be displayed here, sharing their thoughts on the product.",
+            "product_name": "Customer Name Here",
+            "author_name": "Author Name",
+            "enable_stars": true,
+            "rating": 5
+          }
+        },
+        "testimonials_slide_MAgfUH": {
+          "type": "testimonials_slide",
+          "settings": {
+            "text": "A satisfied customer’s words will be displayed here, sharing their thoughts on the product.",
+            "product_name": "Customer Name Here",
+            "author_name": "Author Name",
+            "enable_stars": true,
+            "rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "testimonials_slide_fNcdmz",
+        "testimonials_slide_wWaifP",
+        "testimonials_slide_MAgfUH"
+      ],
+      "name": "t:sections.testimonials.presets.name",
+      "settings": {
+        "layout": "image_right",
+        "image_size": "16/9",
+        "is_loop": true,
+        "is_autoplay": true,
+        "is_hover_stop_autoplay": true,
+        "show_arrows": true,
+        "slideshow_speed": 1.1,
+        "slideshow_delay": 4,
+        "subheading": "Testimonials",
+        "heading": "Here Can Be an Overview of the Number of Satisfied Customers",
+        "heading_size": "display-lg display-lg--medium",
+        "text": "Show how many trust your brand and love products",
+        "margin_top": "s",
+        "margin_bottom": "s"
+      }
+    },
+    "multicolumn_qAt7GU": {
+      "type": "multicolumn",
+      "blocks": {
+        "column-1": {
+          "type": "column",
+          "settings": {
+            "icon": "shield",
+            "heading": "Dlouho vydrží",
+            "text": "Díky tvrdosti a odolnosti dřeva Hevea vydrží Váš nábytek velké zátěže a opotřebení. Tím si zachová svoji strukuru a vzhled i v průběhu času.",
+            "button_label": "Vlastnosti dřeva hevea",
+            "button_link": "shopify://policies/privacy-policy",
+            "button_style": "tertiary",
+            "full_link": false
+          }
+        },
+        "column-2": {
+          "type": "column",
+          "settings": {
+            "icon": "coins-hand",
+            "heading": "Ušetříte",
+            "text": "Vzhledově stejné a s lepšími vlastnostmi než tuzemské dubové dřevo za téměř poloviční ceny! ",
+            "button_label": "Nakupovat",
+            "button_link": "shopify://policies/privacy-policy",
+            "button_style": "tertiary",
+            "full_link": false
+          }
+        },
+        "column-3": {
+          "type": "column",
+          "settings": {
+            "icon": "settings",
+            "heading": "Lehce se s ním pracuje",
+            "text": "Odolnost této dřeviny usnadňuje manipulaci a zpracování, protože je méně náchylné k štěpení nebo praskání. Dobře se lepí, barví, moří a další.",
+            "button_label": "Technické vlastnosti dřeva",
+            "button_link": "shopify://policies/privacy-policy",
+            "button_style": "tertiary",
+            "full_link": false
+          }
+        },
+        "column_7iqRm7": {
+          "type": "column",
+          "settings": {
+            "icon": "heart",
+            "heading": "Chráníte lesy a přírodu",
+            "text": "Používáním dřeva Hevea z existujicích plantáží po výrobě kaučuku snižujete poptávku po dřevu z původních lesů, čímž zmírňujete odlesňování a chráníte životní prostředí.",
+            "button_label": "O nás",
+            "button_link": "shopify://policies/privacy-policy",
+            "button_style": "tertiary",
+            "full_link": false
+          }
+        }
+      },
+      "block_order": [
+        "column-1",
+        "column-2",
+        "column-3",
+        "column_7iqRm7"
+      ],
+      "settings": {
+        "columns_per_row": 4,
+        "content_alignment": "center",
+        "section_heading": "Vlastnosti dřeva hevea",
+        "section_heading_size": "display-sm display-sm--medium",
+        "swipe_on_mobile": true,
+        "card_heading_size": "text-lg text-lg--medium",
+        "image_size": "medium",
+        "image_ratio": "1/1",
+        "object_fit": "cover",
+        "show_border_top": false,
+        "show_border_bottom": false,
+        "margin_top": "xs",
+        "margin_bottom": "no-indent",
+        "padding_top": "no-indent",
+        "padding_bottom": "xs"
+      }
+    },
+    "image_banner_t88fyL": {
+      "type": "image-banner",
       "settings": {
         "color_scheme": "background-1",
+        "section_layout": "standard",
+        "section_size": "container",
+        "image": "shopify://shop_images/0bbfd143b1343b4b5a4268fe4422406651d1c4c2.jpg",
+        "image_ratio": "16/9",
+        "overlay_enable": false,
+        "overlay_opacity": 0.4,
+        "content_alignment": "left",
+        "content_position": "left",
+        "subheading": "Náš příběh",
+        "heading": "Hevea, která drží slovo už od roku 2003",
+        "heading_size": "display-lg display-lg--medium",
+        "text": "Jsme rodinná firma, která už od roku 2003 přináší truhlářům kvalitní alternativu k dubu – dřevo Hevea. Dovážíme ho přímo z vietnamských plantáží a stavíme na tom, co je pro nás klíčové: kvalita, dostupnost, ekologie a spolehlivost pro každé řemeslo.",
+        "enable_animation": true,
+        "promo_alignment": "center",
+        "percent": "",
+        "promo_badge": "",
+        "primary_button_label": "Nakupovat",
+        "primary_button_link": "shopify://collections/all",
+        "primary_button_style": "primary",
+        "secondary_button_label": "Více o nás",
+        "secondary_button_link": "shopify://collections/all",
+        "secondary_button_style": "outlined",
         "margin_top": "m",
-        "margin_bottom": "no-indent"
+        "margin_bottom": "l"
       }
     }
   },
@@ -114,6 +329,8 @@
     "main-product",
     "product-complementary",
     "product-recommendations",
-    "newsletter"
+    "testimonials_XUtX3L",
+    "multicolumn_qAt7GU",
+    "image_banner_t88fyL"
   ]
 }
