@@ -617,6 +617,21 @@
         "padding_top": "s",
         "padding_bottom": "m"
       }
+    },
+    "contact_map": {
+      "type": "contact-map",
+      "settings": {
+        "heading": "Get in Touch",
+        "heading_size": "display-sm display-sm--medium",
+        "text": "Send us a message and we'll get back to you as soon as possible.",
+        "additional_text": "Send us your request using the form below.",
+        "button_style": "primary",
+        "map_api_key": "AIzaSyAMaGqY35ngujGjb_NJekyUF5RwoynzfqU",
+        "map_address": "Nová kolonie 2604/8, 155 00 Praha 13, Česko",
+        "map_zoom": 15,
+        "margin_top": "m",
+        "margin_bottom": "m"
+      }
     }
   },
   "order": [
@@ -630,6 +645,7 @@
     "product-slider",
     "testimonials",
     "featured_blog",
-    "collapsible-content"
+    "collapsible-content",
+    "contact_map"
   ]
 }

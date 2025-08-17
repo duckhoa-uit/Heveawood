@@ -334,6 +334,11 @@
 			"shop_all": "Shop All",
 			"read_all": "Read All"
 		},
+		"contact_map": {
+			"map_aria_label": "Map showing location of {{ address }}",
+			"map_placeholder_title": "Map Configuration Required",
+			"map_placeholder_text": "Please configure your Google Maps API key and address in the theme settings to display the map."
+		},
 		"cart": {
 			"title": "Shopping Cart",
 			"caption": "Cart items",

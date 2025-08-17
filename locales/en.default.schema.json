@@ -1579,6 +1579,38 @@
 				"name": "Contact form"
 			}
 		},
+		"contact_map": {
+			"name": "Contact form with map",
+			"settings": {
+				"heading": {
+					"default": "Get in Touch"
+				},
+				"text": {
+					"default": "Send us a message and we'll get back to you as soon as possible."
+				},
+				"additional_text": {
+					"label": "Additional text",
+					"default": "Send us your request using the form below."
+				},
+				"map_header": {
+					"content": "Map Settings"
+				},
+				"map_api_key": {
+					"label": "Google Maps API Key",
+					"info": "Enter your Google Maps API key to display the map. Get your API key from Google Cloud Console."
+				},
+				"map_address": {
+					"label": "Map Address",
+					"info": "Enter the address or location to display on the map (e.g., '123 Main St, New York, NY')"
+				},
+				"map_zoom": {
+					"label": "Map Zoom Level"
+				}
+			},
+			"presets": {
+				"name": "Contact form with map"
+			}
+		},
 		"custom-liquid": {
 			"name": "Custom liquid",
 			"settings": {

@@ -2359,8 +2359,9 @@ deferred-media {
   border-radius: var(--border-radius-button);
   box-sizing: border-box;
   transition:
-    border var(--duration-default),
-    background-color var(--duration-default);
+    border-color var(--duration-default),
+    background-color var(--duration-default),
+    box-shadow var(--duration-default);
   overflow: hidden;
 }
 .field input[type="text"]::placeholder,
@@ -2407,6 +2408,8 @@ deferred-media {
 .field .field__input:focus-visible,
 .field .field__input:focus {
   outline: none;
+  border-color: rgb(var(--color-border-input-hover));
+  box-shadow: 0 0 0 3px rgba(var(--color-border-input-hover), 0.1);
 }
 .field select:focus-visible,
 .field select:focus {
@@ -2632,8 +2635,8 @@ input[type="radio"]:focus-visible + label {
   font-style: var(--font-body-style);
   font-weight: var(--font-body-weight);
   padding: 1.2rem;
-  min-height: 10rem;
-  resize: none;
+  min-height: 12rem;
+  resize: vertical;
 }
 
 .text-area--resize-vertical {
@@ -2676,12 +2679,36 @@ input[type="radio"]:focus-visible + label {
 }
 
 .form-status-list {
-  padding: 0;
-  margin: 2rem 0 4rem;
+  padding: 1.6rem;
+  margin: 0 0 2.4rem;
+  border-radius: var(--border-radius-button);
+  background-color: rgba(66, 132, 69, 0.1);
+  border: 1px solid rgba(66, 132, 69, 0.3);
+  color: rgb(66, 132, 69);
 }
 
 .form-status-list li {
   list-style-position: inside;
+}
+
+/* Enhanced form message styling */
+.form__message {
+  margin-bottom: 2.4rem;
+  padding: 1.6rem;
+  border-radius: var(--border-radius-button);
+  gap: 1rem;
+}
+
+.form__message .icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0;
+}
+
+.form__message--error {
+  background-color: rgba(var(--color-error), 0.1);
+  border: 1px solid rgba(var(--color-error), 0.3);
+  color: rgb(var(--color-error));
 }
 
 .form-status-list .link::first-letter {
