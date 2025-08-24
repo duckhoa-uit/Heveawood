@@ -60,7 +60,10 @@
           "type": "collection_item",
           "settings": {
             "collection": "sparovky",
+            "custom_title": "",
             "color_scheme": "",
+            "image": "shopify://shop_images/Sparovky_Default.webp",
+            "hover_image": "shopify://shop_images/Sparovky_Hover.webp",
             "overlay_enable": true,
             "overlay_opacity": 0.2
           }
@@ -69,7 +72,10 @@
           "type": "collection_item",
           "settings": {
             "collection": "hranoly",
+            "custom_title": "",
             "color_scheme": "",
+            "image": "shopify://shop_images/Hranoly_Default.webp",
+            "hover_image": "shopify://shop_images/Hranoly_Hover.webp",
             "overlay_enable": true,
             "overlay_opacity": 0.2
           }
@@ -78,7 +84,10 @@
           "type": "collection_item",
           "settings": {
             "collection": "naslapy-1",
+            "custom_title": "Nášlapy",
             "color_scheme": "",
+            "image": "shopify://shop_images/Naslapy_Default.webp",
+            "hover_image": "shopify://shop_images/Naslapy_Hover.webp",
             "overlay_enable": true,
             "overlay_opacity": 0.2
           }
@@ -87,7 +96,10 @@
           "type": "collection_item",
           "settings": {
             "collection": "stolove-desky",
+            "custom_title": "",
             "color_scheme": "",
+            "image": "shopify://shop_images/Stolove-desky_Default.webp",
+            "hover_image": "shopify://shop_images/Stolove-desky_Hover.webp",
             "overlay_enable": true,
             "overlay_opacity": 0.2
           }
@@ -96,7 +108,10 @@
           "type": "collection_item",
           "settings": {
             "collection": "doplnky-ostatni",
+            "custom_title": "Stolové nohy",
             "color_scheme": "",
+            "image": "shopify://shop_images/Stolove-nohy_Default.webp",
+            "hover_image": "shopify://shop_images/Stolove-nohy_Hover.webp",
             "overlay_enable": true,
             "overlay_opacity": 0.2
           }
@@ -105,7 +120,10 @@
           "type": "collection_item",
           "settings": {
             "collection": "naslapy-1",
+            "custom_title": "Další služby",
             "color_scheme": "",
+            "image": "shopify://shop_images/Dalsi-sluzby_Default.webp",
+            "hover_image": "shopify://shop_images/Dalsi-sluzby_Hover.webp",
             "overlay_enable": true,
             "overlay_opacity": 0.2
           }
@@ -231,7 +249,7 @@
         "section_button_style": "tertiary",
         "image_ratio": "3/4",
         "image_fit": "cover",
-        "show_secondary_image": true,
+        "show_secondary_image": false,
         "show_vendor": true,
         "show_collection": false,
         "show_desc": false,
@@ -301,9 +319,9 @@
           "type": "column",
           "settings": {
             "icon": "user-check",
-            "heading": "Na trhu jsme už přes 20 let",
-            "text": "Stojíme na pevných základech, budovaných důvěrou a poctivou prací v oblasti masivního dřeva.",
-            "button_label": "O nás",
+            "heading": "Obsloužíme všechny odběratele",
+            "text": "Dlouhodobě spolupracujeme jak s výrobními firmami, tak s truhláři nebo kutily. Každý zákazník je pro nás důležitý.",
+            "button_label": "B2B nabídka",
             "button_link": "shopify://policies/privacy-policy",
             "button_style": "tertiary",
             "full_link": false
@@ -313,8 +331,8 @@
           "type": "column",
           "settings": {
             "icon": "heart",
-            "heading": "Chráníte lesy a přírodu",
-            "text": "Používáním dřeva Hevea z existujicích plantáží po výrobě kaučuku snižujete poptávku po dřevu z původních lesů, čímž zmírňujete odlesňování a chráníte životní prostředí.",
+            "heading": "Na trhu jsme už přes 20 let",
+            "text": "Stojíme na pevných základech, budovaných důvěrou a poctivou prací v oblasti masivního dřeva.",
             "button_label": "O nás",
             "button_link": "shopify://policies/privacy-policy",
             "button_style": "tertiary",

@@ -235,12 +235,13 @@
   padding: 0 1.6rem;
   width: calc(100% - 1.6rem);
   min-width: unset;
-  opacity: 0;
+  opacity: 1;
   transition:
+    transform var(--duration-default),
     opacity var(--duration-default),
     background-color var(--duration-default),
     border var(--duration-default);
-  /* Removed transform: translate(-50%) translateY(130%); - keeping only opacity changes */
+  transform: translate(-50%) translateY(130%);
   z-index: 3;
   pointer-events: all;
   cursor: pointer;
@@ -260,7 +261,7 @@
   position: relative;
 }
 .card__link--hover:focus {
-  /* Removed transform: translate(-50%) translateY(0); - keeping only opacity */
+  transform: translate(-50%) translateY(0);
   opacity: 1;
 }
 .card__link.button[aria-disabled="true"]:not(.loading) {
@@ -275,7 +276,7 @@
   opacity: 0;
 }
 .card__link--hover.loading {
-  /* Removed transform: translateX(-50%) translateY(0); - keeping only opacity */
+  transform: translateX(-50%) translateY(0);
 }
 .card__link .loading-overlay__spinner {
   display: flex;
@@ -310,7 +311,7 @@
   background-color: rgb(var(--color-button));
   color: rgb(var(--color-button-text));
   border: 1px solid rgb(var(--color-button));
-  /* Removed transform: translateY(130%); - keeping only background changes */
+  transform: translateY(130%);
   padding: 0;
 }
 .card__link.button--link:hover {
@@ -323,7 +324,7 @@
   height: 2rem;
 }
 .card__link.button--link.card__link--static {
-  /* Removed transform: translateY(0); - no transforms needed */
+  transform: translateY(0);
 }
 .card .icon-wrap {
   margin-left: 0.8rem;
@@ -570,7 +571,7 @@
     height: 2rem;
   }
   .card-wrapper .mobile-button--link:focus {
-    /* Removed transform: translate(0) translateY(0); - keeping only color changes */
+    transform: translate(0) translateY(0);
   }
   .card-wrapper .mobile-button--link:hover {
     border-color: rgb(var(--color-button-secondary-border-hover)) !important;
@@ -636,11 +637,11 @@
 
 @media screen and (min-width: 990px) {
   .collection-product-card:hover .card__link:not(.card__link--static) {
-    /* Removed transform: translate(-50%) translateY(0); - keeping only opacity */
+    transform: translate(-50%) translateY(0);
     opacity: 1;
   }
   .collection-product-card:hover .card__link:not(.card__link--static).button--link {
-    /* Removed transform: translateY(0); - keeping only background color changes */
+    transform: translateY(0);
   }
   .collection-product-card:hover .card__link:not(.card__link--static).button[aria-disabled="true"]:not(.loading) {
     opacity: 0.8;

@@ -40,6 +40,20 @@
             else
               assign collection_image = block.settings.collection.featured_image
             endif
+
+            if block.settings.hover_image != blank
+              assign collection_hover_image = block.settings.hover_image
+            else
+              assign collection_hover_image = blank
+            endif
+
+            if block.settings.custom_title != blank
+              assign display_title = block.settings.custom_title
+            elsif block.settings.collection != blank
+              assign display_title = block.settings.collection.title
+            else
+              assign display_title = 'general.card.collection_name' | t
+            endif
           %}
 
           {% style %}
@@ -103,8 +117,21 @@
                       loading: 'lazy',
                       sizes: sizes,
                       widths: '360, 535, 720, 940, 1070, 1200, 1500, 1780, 2000, 2400, 2800, 3200',
-                      style: style
+                      style: style,
+                      class: 'categories-list__image-main'
                   }}
+                  {% if collection_hover_image != blank %}
+                    {{
+                      collection_hover_image
+                      | image_url: width: collection_hover_image.width
+                      | image_tag:
+                        loading: 'lazy',
+                        sizes: sizes,
+                        widths: '360, 535, 720, 940, 1070, 1200, 1500, 1780, 2000, 2400, 2800, 3200',
+                        style: style,
+                        class: 'categories-list__image-hover'
+                    }}
+                  {% endif %}
                 {% else %}
                   {% assign collection_index = forloop.index | modulo: 4 | plus: 1 %}
                   {{ 'collection-apparel-' | append: collection_index | placeholder_svg_tag: 'placeholder-svg' }}
@@ -119,15 +146,15 @@
                     <a
                       href="{{ block.settings.collection.url }}"
                       class="categories-list__link"
-                      aria-label="{{ block.settings.collection.title }}"
+                      aria-label="{{ display_title }}"
                     >
                       <div>
-                        <span>{{ block.settings.collection.title }}</span>
+                        <span>{{ display_title }}</span>
                       </div>
                     </a>
                   {% else %}
                     <div>
-                      <span>{{- 'general.card.collection_name' | t -}}</span>
+                      <span>{{ display_title }}</span>
                     </div>
                   {% endif %}
                 </h4>
@@ -158,15 +185,15 @@
                   <a
                     href="{{ block.settings.collection.url }}"
                     class="categories-list__link"
-                    aria-label="{{ block.settings.collection.title }}"
+                    aria-label="{{ display_title }}"
                   >
                     <span>
-                      {{ block.settings.collection.title }}
+                      {{ display_title }}
                     </span>
                   </a>
                 {% else %}
                   <span>
-                    {{- 'general.card.collection_name' | t -}}
+                    {{ display_title }}
                   </span>
                 {% endif %}
               </h4>
@@ -174,7 +201,7 @@
                 <a
                   href="{{ block.settings.collection.url }}"
                   class="categories-list__overlay-link"
-                  aria-label="{{ block.settings.collection.title }}"
+                  aria-label="{{ display_title }}"
                 ></a>
               {% endif %}
             {% endif %}
@@ -487,6 +514,12 @@
           "label": "t:sections.categories-list.blocks.settings.collection.label"
         },
         {
+          "type": "text",
+          "id": "custom_title",
+          "label": "Custom title",
+          "info": "Leave blank to use collection title"
+        },
+        {
           "type": "color_scheme",
           "id": "color_scheme",
           "default": "background-3",
@@ -498,6 +531,12 @@
           "id": "image",
           "label": "t:sections.categories-list.blocks.settings.image.label",
           "info": "t:sections.categories-list.blocks.settings.image.info"
+        },
+        {
+          "type": "image_picker",
+          "id": "hover_image",
+          "label": "t:sections.categories-list.blocks.settings.hover_image.label",
+          "info": "t:sections.categories-list.blocks.settings.hover_image.info"
         },
         {
           "type": "header",

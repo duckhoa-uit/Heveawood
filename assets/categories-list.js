@@ -74,8 +74,21 @@
     }
   };
 
+  const preloadHoverImages = (section) => {
+    const hoverImages = section.querySelectorAll(".categories-list__image-hover");
+    hoverImages.forEach((img) => {
+      if (img.src && !img.complete) {
+        const preloadImg = new Image();
+        preloadImg.src = img.src;
+      }
+    });
+  };
+
   const initSection = (section) => {
     if (section) {
+      // Preload hover images for better UX
+      preloadHoverImages(section);
+
       const resizeObserver = new ResizeObserver((entries) => {
         entries.forEach((entry) => {
           if (entry.contentRect.width > 1200) {

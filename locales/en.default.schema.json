@@ -1364,6 +1364,10 @@
 					"image": {
 						"label": "Overcover image",
 						"info": "The selected image overcovers the default collection image."
+					},
+					"hover_image": {
+						"label": "Hover image",
+						"info": "Optional image that appears on hover. Falls back to the main image if not set."
 					}
 				}
 			},
