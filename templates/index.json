@@ -545,7 +545,7 @@
         "section_heading_size": "display-sm display-sm--medium",
         "section_button_label": "Zobrazit vše",
         "section_button_link": "shopify://blogs/blogy",
-        "section_button_style": "secondary",
+        "section_button_style": "tertiary",
         "margin_top": "m",
         "margin_bottom": "m"
       }
