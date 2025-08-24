@@ -18,40 +18,6 @@
             "color_scheme": "background-1",
             "image": "shopify://shop_images/1d4a015390c15fe95e79dc6efa53bbd4169b11b4.jpg",
             "subheading": "ODOLNÁ. UDRŽITELNÁ. CENOVĚ VÝHODNÁ.",
-            "heading": "Tvrdý jako dub,<br>ale levnější",
-            "heading_size": "display-2xl display-2xl--bold",
-            "text": "Již přes <strong>20 let</strong> dovážíme a prodáváme kvalitní HEVEA spárovky pro výrobu Vašeho nábytku.",
-            "primary_button_label": "Nabídka",
-            "primary_button_link": "shopify://collections/all",
-            "secondary_button_label": "Více o hevee",
-            "secondary_button_link": "",
-            "overlay_enable": true,
-            "overlay_opacity": 0.7
-          }
-        },
-        "slideshow_item_gzCqDY": {
-          "type": "slideshow_item",
-          "settings": {
-            "color_scheme": "background-1",
-            "image": "shopify://shop_images/1d4a015390c15fe95e79dc6efa53bbd4169b11b4.jpg",
-            "subheading": "ODOLNÁ. UDRŽITELNÁ. CENOVĚ VÝHODNÁ.",
-            "heading": "Tvrdý jako dub,ale levnější",
-            "heading_size": "display-2xl display-2xl--bold",
-            "text": "Již přes <strong>20 let</strong> dovážíme a prodáváme kvalitní HEVEA spárovky pro výrobu Vašeho nábytku.",
-            "primary_button_label": "Nabídka",
-            "primary_button_link": "shopify://collections/all",
-            "secondary_button_label": "Více o hevee",
-            "secondary_button_link": "",
-            "overlay_enable": true,
-            "overlay_opacity": 0.7
-          }
-        },
-        "slideshow_item_XQ7ADn": {
-          "type": "slideshow_item",
-          "settings": {
-            "color_scheme": "background-1",
-            "image": "shopify://shop_images/1d4a015390c15fe95e79dc6efa53bbd4169b11b4.jpg",
-            "subheading": "ODOLNÁ. UDRŽITELNÁ. CENOVĚ VÝHODNÁ.",
             "heading": "Tvrdý jako dub,ale levnější",
             "heading_size": "display-2xl display-2xl--bold",
             "text": "Již přes <strong>20 let</strong> dovážíme a prodáváme kvalitní HEVEA spárovky pro výrobu Vašeho nábytku.",
@@ -65,9 +31,7 @@
         }
       },
       "block_order": [
-        "block_1",
-        "slideshow_item_gzCqDY",
-        "slideshow_item_XQ7ADn"
+        "block_1"
       ],
       "settings": {
         "header_overlay": true,
