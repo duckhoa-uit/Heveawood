@@ -357,3 +357,136 @@
 [data-scheme=dark] .multicolumn-card__image-wrapper img:only-child {
   display: block;
 }
+
+/* ========================================
+   CSS SUBGRID IMPLEMENTATION
+   ======================================== */
+
+/* Phase 1: Feature Detection & Base Structure */
+@supports (grid-template-rows: subgrid) {
+  /* Apply subgrid only when NOT using swiper */
+  .multicolumn-list:not(.swiper) .multicolumn-list__wrapper {
+    grid-template-rows: auto auto auto; /* image/icon, info, button */
+  }
+
+  /* Subgrid implementation for cards */
+  .multicolumn-list:not(.swiper) .multicolumn-card {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 3;
+    gap: 2rem; /* Maintain existing gap */
+  }
+
+  /* Phase 2: Content Area Positioning */
+
+  /* Image/Icon area (conditional) */
+  .multicolumn-list:not(.swiper) .multicolumn-card__image-wrapper {
+    grid-row: 1;
+    justify-self: center; /* Horizontally center image/icon within grid area */
+    /* Maintain existing size and alignment styles */
+  }
+
+  /* Info wrapper contains both heading and text */
+  .multicolumn-list:not(.swiper) .multicolumn-card__info {
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem; /* Maintain existing heading margin */
+    align-self: start; /* Align info content to top of grid area */
+  }
+
+  /* Button area (conditional) */
+  .multicolumn-list:not(.swiper) .multicolumn-card__button {
+    grid-row: 3;
+    align-self: start; /* Align all buttons to top of their grid area */
+    justify-self: start; /* For left alignment */
+  }
+
+  .multicolumn-list:not(.swiper) .multicolumn-card--center .multicolumn-card__button {
+    justify-self: center; /* For center alignment */
+  }
+
+  /* Phase 3: Conditional Content Handling */
+
+  /* When no image/icon, adjust grid structure */
+  .multicolumn-list:not(.swiper) .multicolumn-card:not(:has(.multicolumn-card__image-wrapper)) {
+    grid-row: span 2; /* Only info and button */
+  }
+
+  .multicolumn-list:not(.swiper) .multicolumn-card:not(:has(.multicolumn-card__image-wrapper)) .multicolumn-card__info {
+    grid-row: 1;
+  }
+
+  .multicolumn-list:not(.swiper) .multicolumn-card:not(:has(.multicolumn-card__image-wrapper)) .multicolumn-card__button {
+    grid-row: 2;
+  }
+
+  /* When no button, let info area expand */
+  .multicolumn-list:not(.swiper) .multicolumn-card:not(:has(.multicolumn-card__button)) .multicolumn-card__info {
+    grid-row: 2 / -1; /* Span remaining rows */
+  }
+
+  /* Fallback for browsers that don't support :has() */
+  @supports not selector(:has(*)) {
+    /* Reset to standard 3-row structure for all cards */
+    .multicolumn-list:not(.swiper) .multicolumn-card {
+      grid-row: span 3;
+    }
+
+    .multicolumn-list:not(.swiper) .multicolumn-card__image-wrapper {
+      grid-row: 1;
+    }
+
+    .multicolumn-list:not(.swiper) .multicolumn-card__info {
+      grid-row: 2;
+    }
+
+    .multicolumn-list:not(.swiper) .multicolumn-card__button {
+      grid-row: 3;
+    }
+  }
+}
+
+/* Fallback for browsers that don't support subgrid */
+@supports not (grid-template-rows: subgrid) {
+  /* Maintain current flexbox implementation */
+  .multicolumn-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  /* Ensure image/icon is horizontally centered for consistency */
+  .multicolumn-card__image-wrapper {
+    align-self: center; /* Horizontally center image/icon in flexbox layout */
+  }
+
+  /* Ensure info content aligns to top for consistency */
+  .multicolumn-card__info {
+    align-self: start; /* Align info content to top for consistency with subgrid */
+  }
+
+  /* Re-enable margin-top auto for button alignment */
+  .multicolumn-card__button {
+    margin-top: auto;
+  }
+}
+
+/* Maintain flexbox for swiper mode regardless of subgrid support */
+.multicolumn-list.swiper .multicolumn-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.multicolumn-list.swiper .multicolumn-card__image-wrapper {
+  align-self: center; /* Horizontally center image/icon in swiper mode */
+}
+
+.multicolumn-list.swiper .multicolumn-card__info {
+  align-self: start; /* Consistent top alignment in swiper mode */
+}
+
+.multicolumn-list.swiper .multicolumn-card__button {
+  margin-top: auto;
+}
